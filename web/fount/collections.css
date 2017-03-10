@@ -1,0 +1,346 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-mar-2017, 15:00:51
+    Author     : LENOVOW8
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+
+
+
+.color-icono-white{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.color-white{
+    color:#fff;
+}
+.color-black{
+    color:#333;
+}
+.color-footer-main-black{
+    background-color: rgb(55,71,79);
+}
+
+.slide_subtitle_white {
+    border-top: 1px solid #fff !important;
+    border-bottom: 1px solid #fff !important;
+    /*font: 300 18px/25px "Open Sans", sans-serif;*/
+    padding: 5px 10px;
+    color: #fff;
+/*    text-align: center;
+    text-transform: uppercase;*/
+}
+
+
+
+
+/***/
+
+.tabsdemoDynamicTabs md-content {
+    background-color: transparent !important; }
+.tabsdemoDynamicTabs md-content md-tabs {
+    border: 1px solid #e1e1e1; }
+.tabsdemoDynamicTabs md-content md-tabs md-tab-content {
+    background: #f6f6f6; }
+.tabsdemoDynamicTabs md-content md-tabs md-tabs-wrapper {
+    background: white; }
+.tabsdemoDynamicTabs md-content h1:first-child {
+    margin-top: 0; }
+
+.tabsdemoDynamicTabs md-input-container {
+    padding-bottom: 0; }
+
+.tabsdemoDynamicTabs .remove-tab {
+    margin-bottom: 40px; }
+
+.tabsdemoDynamicTabs .demo-tab > div > div {
+    padding: 25px;
+    box-sizing: border-box; }
+
+.tabsdemoDynamicTabs .edit-form input {
+    width: 80%; }
+
+.tabsdemoDynamicTabs md-tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+
+.tabsdemoDynamicTabs md-tab[disabled] {
+    opacity: 0.5; }
+
+.tabsdemoDynamicTabs label {
+    text-align: left; }
+
+.tabsdemoDynamicTabs .long > input {
+    width: 100px; }
+
+.tabsdemoDynamicTabs .md-button.add-tab {
+    transform: translateY(5px); }
+
+
+
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+    min-height: 208px !important;
+}
+
+
+
+
+
+
+
+
+button{
+    outline: 0px;
+}
+.btn{ 
+    border: none; /*Quita los bordes asperos que tienen los botones por defecto*/
+    background-color: #2196F3;
+    margin: .5rem;
+    position: relative;
+    transform: rotateZ(360deg);
+    transition: all .2s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn-circle{
+    border-radius: 50%; /*Redondear bordes*/
+    width: 50px; /*Ancho del botón*/
+    height: 50px; /*Alto del botón*/
+    font-size: 26px;  
+    box-shadow: 0 3px 5px rgba(0,0,0,.4);
+}
+.btn-circle:hover, .btn-circle:active{
+    box-shadow: 0 4px 7px rgba(0,0,0,.4);
+}
+.btn-rectangle{
+    border-radius: 2px; /*Leve redondeo*/
+    padding: .5rem 1.5rem; /*Espaciado interno*/
+}
+.btn-circle, .btn-raised{
+    color: #FFF;
+}
+.btn-raised{
+    box-shadow: 0 1px 5px rgba(0,0,0,.4); /*Sombra leve*/
+}
+.btn-raised:hover, .btn-raised:active{
+    box-shadow: 0 4px 6px rgba(0,0,0,.4);
+}
+.btn-flat{
+    font-weight: 700; /*Negrilla*/
+    color: #2196F3;
+    background-color: transparent;
+}
+.block{
+    position: relative;
+    width: 270px;
+    height: 178px;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+/* -- import Roboto Font ------------------------------ */
+@import "https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic";
+
+
+
+/* -- Ripple-effect ----------------------------------- */
+.ripple-effect {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translatez(0);
+}
+.ink {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    transform: scale(0);
+}
+.ink {
+    background: #fff;
+    opacity: 1;
+}
+.ink.animate {
+    -webkit-animation: ripple-effect 0.90s linear;
+    -o-animation: ripple-effect 0.90s linear;
+    animation: ripple-effect 0.90s linear;
+}
+
+@keyframes ripple-effect {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
+@-webkit-keyframes ripple-effect {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
+@-moz-keyframes ripple-effect {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
+@-ms-keyframes ripple-effect {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
+@-o-keyframes ripple-effect {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
+
+
+.menudemoBasicUsage .md-menu-demo {
+    padding: 24px; }
+
+.menudemoBasicUsage .menu-demo-container {
+    min-height: 200px; }

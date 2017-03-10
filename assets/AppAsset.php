@@ -18,9 +18,11 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+//        'css/site.css',
+        'theme/css/tareas-app.css'
     ];
     public $js = [
+        '/theme/js/tareas-app.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
