@@ -21,7 +21,7 @@ $this->title = 'Cobranzas Dataservip';
                         <div class="demo-tab tab{{$index % 4}}" style="padding: 25px; text-align: center;">
                             <div ng-bind="tab.content"></div>
                             <br/>
-                            <md-button class="md-primary md-raised"  style="background-color: #FFC107" >Leer Más</md-button>
+                            <md-button class="md-primary md-raised"  style="background-color: #ffad08" >Leer Más</md-button>
                         </div>
                     </md-tab>
                 </md-tabs>

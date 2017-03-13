@@ -13,6 +13,7 @@ module.exports = {
             '../../vendor/bower/angular-aria/angular-aria.js',
             '../../vendor/bower/angular-messages/angular-messages.min.js',
             '../../vendor/bower/angular-material/angular-material.min.js',
+            '../../vendor/bower/AngularJS-Toaster/toaster.js',
        
             '../../web/fount/collections.js',
         ],
@@ -28,7 +29,7 @@ module.exports = {
         src: [
             '../../vendor/bower/angular-material/angular-material.css',
 //            '../../vendor/bower/angular-carousel/dist/angular-carousel.css',
-//            '../../vendor/bower/AngularJS-Toaster/toaster.css',
+            '../../vendor/bower/AngularJS-Toaster/toaster.css',
 //            '../../web/css/xenon-core.css',
 //            '../../vendor/bower/angular-material-data-table/dist/md-data-table.min.css',
 //            '../../vendor/bower/ng-scrollbar/dist/ng-scrollbar.css',

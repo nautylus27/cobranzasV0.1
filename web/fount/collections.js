@@ -5,7 +5,7 @@
  */
 
 
-var app = angular.module('collections', ['ngMaterial']);
+var app = angular.module('collections', ['ngMaterial', 'toaster']);
 app.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
             .primaryPalette('blue-grey')
@@ -164,12 +164,33 @@ function AppCtrl($scope, $log) {
 })(jQuery);
 
 
-app.controller('login', function ($scope) {
 
-    $scope.data = {username: null, password: null, rememberMe: 1};
-    $scope.submit = function () {
-        console.log($scope.data);
-    };
 
-});
+app.controller('login', ['$scope', 'toaster', '$http', function ($scope, toaster, $http) {
+
+        $scope.data = {username: null, password: null};
+        $scope.submit = function () {
+
+            $http({method: 'POST', url: '/site/logincollections', data: $scope.data}).
+                    then(function (response) {
+                        var parameters = response.data;
+
+                        toaster.pop({
+                            type: parameters.type,
+                            title: parameters.title,
+                            body: parameters.message,
+                            showCloseButton: true,
+                        });
+                        if (parameters.type === "success") {
+                            window.location.href = "/dash/index";
+                        }
+
+                    }, function (response) {
+                        $scope.data = response.data || "Request failed";
+                        $scope.status = response.status;
+                    });
+        };
+
+    }])
+
 

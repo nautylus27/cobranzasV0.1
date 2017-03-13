@@ -40,10 +40,10 @@ AppAsset::register($this);
                                     <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdMenu, $event)">
                                         <i class="material-icons" style="color: #FFC107">power_settings_new</i>
                                     </md-button>
-                                    <md-menu-content width="5" style="margin-top: 57px; height: 350px;">
+                                    <md-menu-content width="4" style="margin-top: 41px; height: 350px;">
                                         <form ng-submit="submit()" ng-controller="login">
                                             <md-menu-item>
-                                                <span style="text-align: center; background-color: #D7CCC8; height: 36px;padding: 10px; margin-left: 15px; margin-right: 15px;margin-top: -4px; color:#fff">Iniciar Sesion</span>
+                                                <span style="text-align: center;background-color: #ffad08;height: 36px;padding: 10px;margin-left: 4px;margin-right: 4px;margin-top: -6px;color: #fff;">Iniciar Sesion</span>
                                             </md-menu-item>
                                             <md-menu-item>
                                                 <div>
@@ -63,13 +63,14 @@ AppAsset::register($this);
                                             </md-menu-item >
                                             <md-menu-item style="margin-top: 38px;" class="md-in-menu-bar">
                                                 <div style="text-align: center">
-                                                    <button class="btn" style="background-color: #00BCD4; color: #FFFFFF; width: 344px;"  role="menuitem">Ingresar</button>
+                                                    <button class="btn" style="background-color: #00BCD4; color: #FFFFFF; width: 250px;"  role="menuitem">Ingresar</button>
                                                 </div>
                                             </md-menu-item>
                                             <md-menu-item  class="md-in-menu-bar" style="margin-top: -22px; margin-left: 6px;">
-                                                <div >
-                                                    <a href="javascripts:;" ng-click="" style="color:#FFAB00">¿Olvido su contraseña?</a>
+                                                <div>
+                                                    <a href="javascripts:;" ng-click="" style="color:#FFAB00; font-size: 12px;">¿Olvido su contraseña?</a>
                                                 </div>
+                                       
                                             </md-menu-item>
                                         </form>
                                     </md-menu-content>
@@ -81,12 +82,12 @@ AppAsset::register($this);
             </md-content>
             <div class="container" style="width: 100%; padding: 0px !important;">
                 <?= $content ?>
+                <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
             </div>
         </div>
         <footer class="footer color-footer-main-black">
             <div class="container color-white">
-                <p class="text-center">&copy; COBRANZAS - DATASERVIP <?= date('Y') ?></p>
-
+                <p class="text-center" style="font-size: 12px;">&copy; COBRANZAS - DATASERVIP <?= date('Y') ?></p>
             </div>
         </footer>
 
