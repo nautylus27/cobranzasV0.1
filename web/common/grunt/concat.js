@@ -8,12 +8,22 @@ module.exports = {
     },
     appjs: {
         src: [
+            '../../vendor/bower/jquery/dist/jquery.min.js',
+            '../../vendor/bower/datatables.net/js/jquery.dataTables.min.js',
             '../../vendor/bower/angular/angular.js',
             '../../vendor/bower/angular-animate/angular-animate.js',
             '../../vendor/bower/angular-aria/angular-aria.js',
             '../../vendor/bower/angular-messages/angular-messages.min.js',
             '../../vendor/bower/angular-material/angular-material.min.js',
             '../../vendor/bower/AngularJS-Toaster/toaster.js',
+            '../../vendor/bower/angular-datatables/demo/src/archives/dist/angular-datatables.min.js',
+            '../../vendor/bower/angular-filter-count-to-master/angular-filter-count-to-master/dist/angular-filter-count-to.min.js',
+            '../../web/fount/menu/js/bootstrap3.3.1.js',
+            '../../web/fount/menu/js/customMn.js',
+            '../../web/fount/menu/js/joinable.js',
+            '../../web/fount/menu/js/Resizeable.js',
+            '../../web/fount/menu/js/TweenMax.js',
+            '../../web/fount/menu/js/xenonMail.js',
        
             '../../web/fount/collections.js',
         ],
@@ -27,12 +37,13 @@ module.exports = {
     },
     appcss: {
         src: [
+            '../../vendor/bower/bootstrap/dist/css/bootstrap.css',
+            '../../vendor/bower/datatables.net-dt/css/jquery.dataTables.css',
             '../../vendor/bower/angular-material/angular-material.css',
-//            '../../vendor/bower/angular-carousel/dist/angular-carousel.css',
             '../../vendor/bower/AngularJS-Toaster/toaster.css',
-//            '../../web/css/xenon-core.css',
+            '../../web/fount/menu/css/xenon-core.css',
+            '../../vendor/bower/angular-datatables/demo/src/archives/dist/css/angular-datatables.css',
 //            '../../vendor/bower/angular-material-data-table/dist/md-data-table.min.css',
-//            '../../vendor/bower/ng-scrollbar/dist/ng-scrollbar.css',
             '../../web/fount/collections.css',
             
         ],

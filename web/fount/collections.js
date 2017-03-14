@@ -5,7 +5,7 @@
  */
 
 
-var app = angular.module('collections', ['ngMaterial', 'toaster']);
+var app = angular.module('collections', ['ngMaterial', 'toaster', 'datatables', 'ngCountTo']);
 app.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
             .primaryPalette('blue-grey')
@@ -192,5 +192,123 @@ app.controller('login', ['$scope', 'toaster', '$http', function ($scope, toaster
         };
 
     }])
+
+
+app.controller('AngularWayCtrl', ['$scope', 'toaster', '$http', function ($scope, toaster, $http) {
+
+        var showCase1 = [{
+                "id": 860,
+                "firstName": "Superman",
+                "lastName": "Yoda"
+            }, {
+                "id": 870,
+                "firstName": "Foo",
+                "lastName": "Whateveryournameis"
+            }, {
+                "id": 590,
+                "firstName": "Toto",
+                "lastName": "Titi"
+            }, {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            },
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+            ,
+             {
+                "id": 803,
+                "firstName": "Luke",
+                "lastName": "Kyle"
+            }
+        ];
+        
+        $scope.showCase=showCase1;
+        
+
+    }])
+
+app.controller('countPay', function ($scope) {
+
+    $scope.countTo = 1860;
+    $scope.countFrom = 0;
+    $scope.filter = 'number';
+    
+    $scope.countToN = 860;
+    $scope.countToNp = 40;
+    $scope.countFromN = 0;
+    $scope.countFromNp = 0;
+ 
+    $scope.countToV = 1000;
+    $scope.countToVp = 60;
+    $scope.countFromV = 0;
+    $scope.countFromVp = 0;
+
+   
+
+});
+
+
+
+
+
+
 
 
