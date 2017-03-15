@@ -6805,19 +6805,19 @@ table.dataTable thead .sorting_desc_disabled {
   background-position: center right;
 }
 table.dataTable thead .sorting {
-  background-image: url("../images/sort_both.png");
+  /*background-image: url("../images/sort_both.png");*/
 }
 table.dataTable thead .sorting_asc {
-  background-image: url("../images/sort_asc.png");
+  /*background-image: url("../images/sort_asc.png");*/
 }
 table.dataTable thead .sorting_desc {
-  background-image: url("../images/sort_desc.png");
+  /*background-image: url("../images/sort_desc.png");*/
 }
 table.dataTable thead .sorting_asc_disabled {
-  background-image: url("../images/sort_asc_disabled.png");
+  /*background-image: url("../images/sort_asc_disabled.png");*/
 }
 table.dataTable thead .sorting_desc_disabled {
-  background-image: url("../images/sort_desc_disabled.png");
+  /*background-image: url("../images/sort_desc_disabled.png");*/
 }
 table.dataTable tbody tr {
   background-color: white;
@@ -9001,7 +9001,7 @@ md-datepicker[disabled] .md-datepicker-triangle-button {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   z-index: 80;
   overflow: hidden; }
 

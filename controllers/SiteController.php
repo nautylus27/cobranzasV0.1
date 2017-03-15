@@ -138,4 +138,9 @@ class SiteController extends Controller {
         }
     }
 
+    
+      public function actionModalnew() {
+        $this->layout = 'modalnew';  
+        return $this->render('colle');
+    }
 }

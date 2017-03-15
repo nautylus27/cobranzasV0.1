@@ -2,13 +2,15 @@
 
 namespace app\controllers;
 
+
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use app\models\TypeDonors;
 
-class ColletionsController extends \yii\web\Controller {
-
+class DonorsController extends \yii\web\Controller
+{
     public function beforeAction($action) {
         try {
             $this->enableCsrfValidation = FALSE;
@@ -58,15 +60,21 @@ class ColletionsController extends \yii\web\Controller {
         ];
     }
 
-    public function actionIndex() {
-        $this->layout = 'analist';
+    
+    
+    
+    
+    
+    public function actionIndex()
+    {
         return $this->render('index');
     }
+    
+    public function actionQuerytypedonors(){
+        
+         $data = TypeDonors::queryAllTypeDonors();
+         echo json_encode($resquest = ["response" => true, "data" =>$data]);
 
-     public function actionModalnew() {
-        $this->layout = 'modalnew';  
-        return $this->render('colle');
     }
-  
 
 }

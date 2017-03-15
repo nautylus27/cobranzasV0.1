@@ -213,75 +213,75 @@ app.controller('AngularWayCtrl', ['$scope', 'toaster', '$http', function ($scope
                 "firstName": "Luke",
                 "lastName": "Kyle"
             },
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
             ,
-             {
+            {
                 "id": 803,
                 "firstName": "Luke",
                 "lastName": "Kyle"
             }
         ];
-        
-        $scope.showCase=showCase1;
-        
+
+        $scope.showCase = showCase1;
+
 
     }])
 
@@ -290,19 +290,19 @@ app.controller('countPay', function ($scope) {
     $scope.countTo = 1860;
     $scope.countFrom = 0;
     $scope.filter = 'number';
-    
+
     $scope.countToendtnovencidas = 860;
     $scope.countFromstartnovencidas = 0;
     $scope.countToendtnovencidasporcen = 30;
     $scope.countFromstartnovencidasporcen = 0;
-    
+
     $scope.countToendtvencidas = 1000;
     $scope.countFromstartvencidas = 0;
     $scope.countToendtvencidasporcen = 70;
     $scope.countFromstartvencidasporcen = 0;
 
 
-   
+
 
 });
 
@@ -312,4 +312,79 @@ app.controller('countPay', function ($scope) {
 
 
 
+
+//*****//
+
+
+
+app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia) {
+
+
+    $scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
+    $scope.showModal = function (ev, arg) {
+
+        $mdDialog.show({
+            controller: DialogController,
+            templateUrl: '/colletions/modalnew',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose: true
+        })
+                .then(function (answer) {
+                    $scope.status = 'You said the information was "' + answer + '".';
+                }, function () {
+                    $scope.status = 'You cancelled the dialog.';
+                });
+    };
+
+
+//    };
+})
+
+
+
+
+function DialogController($scope, $mdDialog, $http) {
+    $scope.hide = function () {
+        $mdDialog.hide();
+    };
+    $scope.cancel = function () {
+        $mdDialog.cancel();
+        $scope.$broadcast('timer-resume');
+        $scope.timerRunning = true;
+    };
+    $scope.cancelConnection = function () {
+        $scope.matterSelection = true;
+    };
+    $scope.answer = function (answer) {
+        $mdDialog.hide(answer);
+    };
+
+    $scope.pizarra = function (matter) {
+        console.log(matter);
+        window.location.href = "/site/pizarra";
+    };
+
+    $scope.closeClass = function () {
+        console.log('Holla desde close clase');
+        $http.get('/classes/default/close').then(function (res) {}, function (err) {
+            console.log(err)
+        });
+    }
+}
+
+
+
+app.controller('modalNuevo', function ($scope, $http) {
+
+    $http({method: 'POST', url: '/donors/querytypedonors'}).
+            then(function (response) {
+                $scope.parameters = response.data;
+            }, function (response) {
+                $scope.data = response.data || "Request failed";
+                $scope.status = response.status;
+            });
+  
+
+})
 

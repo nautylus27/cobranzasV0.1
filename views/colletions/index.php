@@ -55,54 +55,28 @@
                 <div style="text-align: center;">
                     <div layout="row" layout-xs="column">
                         <div flex style="color: #00BCD4;">
-                             <span ng-count-to="{{countToendtnovencidas}}" value="{{countFromstartnovencidas}}" duration="4" filter="currency" params="$" ></span>
+                            <span ng-count-to="{{countToendtnovencidas}}" value="{{countFromstartnovencidas}}" duration="4" filter="currency" params="$" ></span>
                         </div>
                         <div flex style="color: #F44336;">
-                             <span ng-count-to="{{countToendtvencidas}}" value="{{countFromstartvencidas}}" duration="4" filter="currency" params="$" ></span>
+                            <span ng-count-to="{{countToendtvencidas}}" value="{{countFromstartvencidas}}" duration="4" filter="currency" params="$" ></span>
                         </div>
                     </div>
                 </div>
                 <div style="text-align: center;">
                     <div layout="row" layout-xs="column">
                         <div flex style="color: #d0c0bd;">
-                             (<span ng-count-to="{{countToendtnovencidasporcen}}" value="{{countFromstartnovencidasporcen}}" duration="4" filter="number" ></span>%)
+                            (<span ng-count-to="{{countToendtnovencidasporcen}}" value="{{countFromstartnovencidasporcen}}" duration="4" filter="number" ></span>%)
                         </div>
                         <div flex style="color: #d0c0bd;">
-                             (<span ng-count-to="{{countToendtvencidasporcen}}" value="{{countFromstartvencidasporcen}}" duration="4" filter="number" ></span>%)
+                            (<span ng-count-to="{{countToendtvencidasporcen}}" value="{{countFromstartvencidasporcen}}" duration="4" filter="number" ></span>%)
                         </div>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 130px;">
-                    <div>
-                        <md-button class="md-primary md-raised"  style="background-color: #00BCD4" >Nuevo Ingreso</md-button>
+                <div style="text-align: center; margin-top: 104px;">
+                    <div ng-controller="newCollections">
+                        <md-button class="md-primary md-raised"  style="background-color: #00BCD4" ng-click="showModal($event, ['/collections/modelnew'])" >Nuevo Ingreso</md-button>
                     </div>
                 </div>
-                <!--                <div >
-                
-                                    <div layout="row" layout-xs="column">
-                                        <div flex>
-                                            <span style="color: #4CAF50">No Vencidas</span>
-                                        </div>
-                                        <div flex>
-                                            <span ng-count-to="{{countToN}}" value="{{countFromN}}" duration="4" filter="currency" params="$" ></span>
-                                        </div>
-                                        <div flex>
-                                            <span ng-count-to="{{countToNp}}" value="{{countFromNp}}" duration="4"  ></span>
-                                        </div>
-                                    </div>
-                                    <div layout="row" layout-xs="column">
-                                        <div flex>
-                                           <span style="color: #F44336">Vencidas</span>
-                                        </div>
-                                        <div flex>
-                                            <span ng-count-to="{{countToV}}" value="{{countFromV}}" duration="4" filter="number"></span>
-                                        </div>
-                                        <div flex>
-                                            <span ng-count-to="{{countToVp}}" value="{{countFromVp}}" duration="4" ></span>
-                                        </div>
-                                    </div>
-                
-                                </div>-->
             </div>
         </div>
     </div>
