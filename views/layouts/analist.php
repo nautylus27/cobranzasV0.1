@@ -26,7 +26,7 @@ AppAsset::register($this);
     </head>
     <body ng-app="collections" style="background-color: #fafafa;" ng-cloak >
         <?php $this->beginBody() ?>
-        <div layout="row">
+        <div layout="row" style="position: fixed; width: 100%;">
             <div flex-gt-sm="100" flex="100">
                 <md-content>
                     <md-toolbar class="md-hue-2">

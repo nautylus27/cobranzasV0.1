@@ -43056,15 +43056,16 @@ app.controller('countPay', function ($scope) {
     $scope.countFrom = 0;
     $scope.filter = 'number';
     
-    $scope.countToN = 860;
-    $scope.countToNp = 40;
-    $scope.countFromN = 0;
-    $scope.countFromNp = 0;
- 
-    $scope.countToV = 1000;
-    $scope.countToVp = 60;
-    $scope.countFromV = 0;
-    $scope.countFromVp = 0;
+    $scope.countToendtnovencidas = 860;
+    $scope.countFromstartnovencidas = 0;
+    $scope.countToendtnovencidasporcen = 30;
+    $scope.countFromstartnovencidasporcen = 0;
+    
+    $scope.countToendtvencidas = 1000;
+    $scope.countFromstartvencidas = 0;
+    $scope.countToendtvencidasporcen = 70;
+    $scope.countFromstartvencidasporcen = 0;
+
 
    
 
