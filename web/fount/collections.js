@@ -367,10 +367,18 @@ function DialogController($scope, $mdDialog, $http) {
 
     $scope.closeClass = function () {
         console.log('Holla desde close clase');
-        $http.get('/classes/default/close').then(function (res) {}, function (err) {
-            console.log(err)
-        });
+//        $http.get('/classes/default/close').then(function (res) {}, function (err) {
+//            console.log(err)
+//        });
     }
+
+
+
+
+
+
+
+
 }
 
 
@@ -386,13 +394,15 @@ app.controller('modalNuevo', function ($scope, $http) {
             });
 
 
-    $scope.data = {username: null, password: null};
-    $scope.submit = function () {
-        console.log("aqui");
-//        $http({method: 'POST', url: '/site/logincollections', data: $scope.data}).
-//                then(function (response) {
-//                    var parameters = response.data;
-//
+    $scope.data = {cedente: null, identificationcedente: null, typeIdentificationcedente: null, name: null, departamento: null, residencia: null, phone: null, email: null, numberaccount: null, typeaccount: null, bank:null, clasification:null, identificationacre:null, typeIdentification:null, nameacree:null, departamentoacree:null, residenciaacree:null, phoneacree:null, emailacreer:null, vradecuado:null, reportdate:null, che:null, ce:null, cp:null, fc:null, lc:null, li:null, pa:null, rc:null, rcb:null};
+
+    $scope.saveNew = function () {
+        console.log ($scope.data);
+        
+        $http({method: 'POST', url: '/colletions/registernew', data: $scope.data}).
+                then(function (response) {
+                    var parameters = response.data;
+                    console.log (parameters);
 //                    toaster.pop({
 //                        type: parameters.type,
 //                        title: parameters.title,
@@ -402,14 +412,12 @@ app.controller('modalNuevo', function ($scope, $http) {
 //                    if (parameters.type === "success") {
 //                        window.location.href = "/dash/index";
 //                    }
-//
-//                }, function (response) {
-//                    $scope.data = response.data || "Request failed";
-//                    $scope.status = response.status;
-//                });
+
+                }, function (response) {
+                    $scope.data = response.data || "Request failed";
+                    $scope.status = response.status;
+                });
     };
-
-
 
 
 })

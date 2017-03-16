@@ -27,7 +27,7 @@
                         <div flex>
                             <div class="text-center" style="color: #9c9c9c; margin-bottom: 7px;">Tipo de Identificación</div>
                             <md-radio-group ng-model="data.typeIdentificationcedente">
-                                <md-radio-button value="cedúla" class="md-primary" style="margin-left: 59px; float: left">Cedúla</md-radio-button>
+                                <md-radio-button value="cedula" class="md-primary" style="margin-left: 59px; float: left">Cedúla</md-radio-button>
                                 <md-radio-button value="NIT" style="margin-left: 163px;">NIT</md-radio-button>
                             </md-radio-group>
                         </div>
@@ -157,7 +157,7 @@
                             <div flex>
                                 <div class="text-center" style="color: #9c9c9c; margin-bottom: 7px;">Tipo de Identificación</div>
                                 <md-radio-group ng-model="data.typeIdentification">
-                                    <md-radio-button value="cedúla" class="md-primary" style="margin-left: 59px; float: left">Cedúla</md-radio-button>
+                                    <md-radio-button value="cedula" class="md-primary" style="margin-left: 59px; float: left">Cedúla</md-radio-button>
                                     <md-radio-button value="NIT" style="margin-left: 163px;">NIT</md-radio-button>
                                 </md-radio-group>
                             </div>
@@ -231,7 +231,7 @@
                             </div>
                             <div flex >
                                 <md-input-container class="md-block" flex-gt-sm>
-                                    <label>Vr Adecuado</label>
+                                    <label>Vr Adeudado</label>
                                     <input ng-model="data.vradecuado">
                                 </md-input-container>
                             </div>
@@ -349,29 +349,29 @@
                         <div flex>
                             <div><i class="material-icons" style="color: #00BCD4">person_pin</i><span>Informacion del cedente</span></div>
                             <div style="margin-left: 40px;">
-                                <div><span>Tipo de cendente</span>: <span>{{data.cedente}}</span></div>
-                                <div><span>Número de Identificación</span>{{data.identificationcedente}}</div>
-                                <div><span>Tipo de Identificación</span><span>: {{data.typeIdentificationcedente}}</span></div>
-                                <div><span>Nombre del reportante</span>: <span>{{data.name}}</span></div>
-                                <div><span>Departamento</span>: <span>{{data.departamento}}</span></div>
-                                <div><span>Ciudad de Residencia</span>: <span>{{data.residencia}}</span></div>
-                                <div><span>Teléfono Fijo y/o Celular</span>: <span>{{data.phone}}</span></div>
-                                <div><span>Correo Electrónico Email</span>: <span>{{data.email}}</span></div>
+                                <div><span style="color: #9E9E9E">Tipo de cendente</span>: <span>{{data.cedente}}</span></div>
+                                <div><span style="color: #9E9E9E">Número de Identificación</span>: <span>{{data.identificationcedente}}</span></div>
+                                <div><span style="color: #9E9E9E">Tipo de Identificación</span>: <span>{{data.typeIdentificationcedente}}</span></div>
+                                <div><span style="color: #9E9E9E">Nombre del reportante</span>: <span>{{data.name}}</span></div>
+                                <div><span style="color: #9E9E9E">Departamento</span>: <span>{{data.departamento}}</span></div>
+                                <div><span style="color: #9E9E9E">Ciudad de Residencia</span>: <span>{{data.residencia}}</span></div>
+                                <div><span style="color: #9E9E9E">Teléfono Fijo y/o Celular</span>: <span>{{data.phone}}</span></div>
+                                <div><span style="color: #9E9E9E">Correo Electrónico Email</span>: <span>{{data.email}}</span></div>
                             </div>
                         </div>
                         <div flex>
                             <div><i class="material-icons" style="color: #00BCD4">person_pin</i><span>Información del Acreedor</span></div>
                             <div style="margin-left: 40px;">
-                                <div><span>Clasificación</span><span>: {{data.clasification}}</span></div>
-                                <div><span>Número de Identificación</span><span>: {{data.identificationacre}}</span></div>
-                                <div><span>Tipo de Identificación</span><span>: {{data.typeIdentification}}</span></div>
-                                <div><span>Descripción del Acreedor</span><span>: {{data.nameacree}}</span></div>
-                                <div><span>Departamento</span><span>: {{data.departamentoacree}}</span></div>
-                                <div><span>Ciudad de Residencia</span><span>: {{data.residenciaacree}}</span></div>
-                                <div><span>Teléfono Fijo y/o Celular</span><span>: {{data.phoneacree}}</span></div>
-                                <div><span>Correo Electrónico Email</span><span>: {{data.emailacreer}}</span></div>
-                                <div><span>Vr Adecuado</span><span>: {{data.vradecuado}}</span></div>
-                                <div><span>Fecha Reporte</span><span>: {{data.reportdate}}</span></div>
+                                <div><span style="color: #9E9E9E">Clasificación</span><span>: {{data.clasification}}</span></div>
+                                <div><span style="color: #9E9E9E">Número de Identificación</span><span>: {{data.identificationacre}}</span></div>
+                                <div><span style="color: #9E9E9E">Tipo de Identificación</span><span>: {{data.typeIdentification}}</span></div>
+                                <div><span style="color: #9E9E9E">Descripción del Acreedor</span><span>: {{data.nameacree}}</span></div>
+                                <div><span style="color: #9E9E9E">Departamento</span><span>: {{data.departamentoacree}}</span></div>
+                                <div><span style="color: #9E9E9E">Ciudad de Residencia</span><span>: {{data.residenciaacree}}</span></div>
+                                <div><span style="color: #9E9E9E">Teléfono Fijo y/o Celular</span><span>: {{data.phoneacree}}</span></div>
+                                <div><span style="color: #9E9E9E">Correo Electrónico Email</span><span>: {{data.emailacreer}}</span></div>
+                                <div><span style="color: #9E9E9E">Vr Adeudado</span><span>: {{data.vradecuado}}</span></div>
+                                <div><span style="color: #9E9E9E">Fecha Reporte</span><span>: {{data.reportdate}}</span></div>
                             </div>
                         </div>
                     </div>
@@ -379,21 +379,21 @@
                         <div flex>
                            <div><i class="material-icons" style="color: #00BCD4">credit_card</i><span>Datos Bancarios</span></div>
                             <div style="margin-left: 40px;">
-                                <div><span>Nro de cuenta para consignar los saldos recuperados</span><span>: {{data.numberaccount}}</span></div>
-                                <div><span>Tipo de cuenta</span><span>: {{data.typeaccount}}</span></div>
-                                <div><span>¿A cual banco pertenece la cuenta?</span><span>: {{data.bank}}</span></div>
+                                <div><span style="color: #9E9E9E">Nro de cuenta para consignar los saldos recuperados</span><span>: {{data.numberaccount}}</span></div>
+                                <div><span style="color: #9E9E9E">Tipo de cuenta</span><span>: {{data.typeaccount}}</span></div>
+                                <div><span style="color: #9E9E9E">¿A cual banco pertenece la cuenta?</span><span>: {{data.bank}}</span></div>
                             </div>
                         </div>
                     </div>
-                    <div layout="row" layout-xs="column" style="margin-top: 10px;">
+                    <div layout="row" layout-xs="column" style="margin-top: 8px;">
                         <div flex>
                             <div><i class="material-icons" style="color: #00BCD4">local_taxi</i><span>Información del Vehículo</span></div>
                             <div style="margin-left: 40px;">
-                                <div><span>Placa del Vehículo</span><span>: {{data.placa_vehiculo}}</span></div>
-                                <div><span>Marca del Vehículo</span><span>: {{data.marca_vehiculo}}</span></div>
-                                <div><span>Empresa Afiliadora</span><span>: {{data.empresa_afiliadora}}</span></div>
-                                <div><span>Motivo del Reporte</span><span>: {{data.motivo_reporte}}</span></div>
-                                <div><span>fecha Reporte</span><span>: {{data.date_report_dataservip}}</span></div>
+                                <div><span style="color: #9E9E9E">Placa del Vehículo</span><span>: {{data.placa_vehiculo}}</span></div>
+                                <div><span style="color: #9E9E9E">Marca del Vehículo</span><span>: {{data.marca_vehiculo}}</span></div>
+                                <div><span style="color: #9E9E9E">Empresa Afiliadora</span><span>: {{data.empresa_afiliadora}}</span></div>
+                                <div><span style="color: #9E9E9E">Motivo del Reporte</span><span>: {{data.motivo_reporte}}</span></div>
+                                <div><span style="color: #9E9E9E">fecha Reporte</span><span>: {{data.date_report_dataservip}}</span></div>
                             </div>
                         </div>
                         <div flex>
@@ -403,12 +403,12 @@
                             </div>
                         </div>
                     </div>
-                    <md-dialog-actions layout="row">
+                    <md-dialog-actions layout="row" style="margin-top: -10px;">
                         <span flex></span>
                         <md-button ng-click="answer('not useful')" style="background-color: #E0E0E0">
                            cancelar
                         </md-button>
-                        <md-button ng-click="submit()" style="background-color: #FFC107; color: #FFFFFF">
+                        <md-button ng-click="saveNew()" style="background-color: #FFC107; color: #FFFFFF">
                             Guardar
                         </md-button>
                     </md-dialog-actions>
