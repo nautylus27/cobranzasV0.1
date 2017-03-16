@@ -384,7 +384,33 @@ app.controller('modalNuevo', function ($scope, $http) {
                 $scope.data = response.data || "Request failed";
                 $scope.status = response.status;
             });
-  
+
+
+    $scope.data = {username: null, password: null};
+    $scope.submit = function () {
+        console.log("aqui");
+//        $http({method: 'POST', url: '/site/logincollections', data: $scope.data}).
+//                then(function (response) {
+//                    var parameters = response.data;
+//
+//                    toaster.pop({
+//                        type: parameters.type,
+//                        title: parameters.title,
+//                        body: parameters.message,
+//                        showCloseButton: true,
+//                    });
+//                    if (parameters.type === "success") {
+//                        window.location.href = "/dash/index";
+//                    }
+//
+//                }, function (response) {
+//                    $scope.data = response.data || "Request failed";
+//                    $scope.status = response.status;
+//                });
+    };
+
+
+
 
 })
 
