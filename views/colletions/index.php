@@ -1,33 +1,56 @@
-<div layout="row" style="padding-top: 10px; position: static; margin-top: 60px;">
-    <div flex="70" class="md-whiteframe-6dp" >
-        <div style="background-color: rgba(189, 189, 189, 0.45); height: 15px;">
+<div layout="row"  layout-xs="column"style="padding-top: 10px; position: static; margin-top: 60px;">
+    <div flex style="margin-right: 20px;">
+        <md-input-container class="md-block" flex-gt-sm >
+            <label>Tipo de Cendente </label>
+            <md-select name="type" ng-model="data.cedente" ng-change="typeR(data.cedente)">
+                <md-option ng-repeat="parameter in parameters.data"    value={{parameter.id_donors}}>{{parameter.description_donors}}</md-option>
+            </md-select>
+        </md-input-container>
+    </div>
+</div>
 
-        </div>
+
+<!--<div layout="row" style="padding-top: 10px; position: static; margin-top: 60px;" >
+    <div  class="md-whiteframe-6dp" >
         <div style="height: 91px; margin-top: 42px; margin-left: 10px;">
             <div><span style="font-size: 26px;">Detalles de la cartera de cobro</span></div>
             <div><span style="color: #BDBDBD; font-size: 13px;">Formulario para ingresar la información de los Cedentes y relacionarlos con sus respectivos Acreedores </span></div>
         </div>
-        <div ng-controller="AngularWayCtrl as showCase">
+        <div>
             <table datatable="ng" class="row-border hover">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>FirstName</th>
-                        <th>LastName</th>
+                        <th>Tipo de Cedente</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Clasificación</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Valor Adeudado</th>
+                        <th>Fecha de Reporte</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="person in showCase">
-                        <td>{{ person.id}}</td>
-                        <td>{{ person.firstName}}</td>
-                        <td>{{ person.lastName}}</td>
+                    <tr ng-repeat="person in showCase" ng-init="myInfo = parJson(person.parameters)">
+                        <td>{{myInfo.cedentes.assignor}}</td>
+                        <td>{{myInfo.cedentes.name_assignor}}</td>
+                        <td>{{myInfo.cedentes.phone_assignor}}</td>
+                        <td>{{myInfo.cedentes.email_assignor}}</td>
+                        <td>{{myInfo.acreedor.clasification}}</td>
+                        <td>{{myInfo.acreedor.name_creditor}}</td>
+                        <td>{{myInfo.acreedor.phone_creditor}}</td>
+                        <td>{{myInfo.acreedor.email_creditor}}</td>
+                        <td>{{myInfo.acreedor.vr_adeudado}}</td>
+                        <td>{{myInfo.acreedor.date_report}}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <div flex hide-sm hide-xs>
-        <div style="padding-left:10px; padding-right: 10px;" ng-controller="countPay">
+        <div style="padding-left:10px; padding-right: 10px;">
             <div style="background-image: url(../../imagen/montana.jpg); height: 183px;"  class="md-whiteframe-6dp">
                 <div style="background-color: rgba(158, 158, 158, 0.25); height: 15px;"></div>
                 <div class="text-center"><i class="material-icons text-center" style="font-size: 130px; color: #FFC107; margin-top: 89px;">unarchive</i></div>
@@ -73,7 +96,7 @@
                     </div>
                 </div>
                 <div style="text-align: center; margin-top: 104px;">
-                    <div ng-controller="newCollections">
+                    <div>
                         <md-button class="md-primary md-raised"  style="background-color: #00BCD4" ng-click="showModal($event, ['/collections/modelnew'])" >Nuevo Ingreso</md-button>
                     </div>
                 </div>
@@ -81,4 +104,4 @@
         </div>
     </div>
 </div>
-
+-->

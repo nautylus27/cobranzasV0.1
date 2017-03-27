@@ -45,7 +45,7 @@ $config = [
             'rules' => [
                         'welcome' => 'site/login',
                         'classes/<id:\d+>' => '/classes/default/index',
-                        'waitting-class/<matter:\d+>' => '/classes/default/waitting-class'
+                        'waitting-class/<matter:\d+>' => '/classes/default/waitting-class',
                     ]
             
         ]

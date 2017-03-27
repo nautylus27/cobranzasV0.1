@@ -127,9 +127,18 @@ class SiteController extends Controller {
     }
 
     public function actionLogincollections() {
+        
+        $session = Yii::$app->session;
+        $session->open();
         $postData = file_get_contents("php://input");
         $post = json_decode($postData, true);
         $response = Users::validateUsers($post);
+        $id_employee=$response['id_employee'];
+        $id_users=$response['id_users'];
+        $_SESSION['id_employee'] = $id_employee;
+        $_SESSION['id_users'] = $id_users;
+    
+        
         if ($response != false){
              echo json_encode($resquest = ["response" => $response, "message" => "Redireccionando...", "title"=>"Proceso Exitoso", "type"=>"success"]);
         }
@@ -138,9 +147,9 @@ class SiteController extends Controller {
         }
     }
 
-    
-      public function actionModalnew() {
-        $this->layout = 'modalnew';  
+    public function actionModalnew() {
+        $this->layout = 'modalnew';
         return $this->render('colle');
     }
+
 }

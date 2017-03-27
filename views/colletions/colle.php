@@ -1,4 +1,4 @@
-<div ng-cloak ng-controller="modalNuevo" >
+<div ng-cloak >
     <div style="height: 51px;padding-top: 10px;">
         <span style="font-size: 22px; margin-left: 16px; margin-top: 13px;">Nuevo Ingreso Cartera/Cobro</span>
     </div>
@@ -14,7 +14,7 @@
                             <md-input-container class="md-block" flex-gt-sm >
                                 <label>Tipo de Cendente </label>
                                 <md-select name="type" ng-model="data.cedente" required>
-                                    <md-option ng-repeat="parameter in parameters.data"  value={{parameter.description_donors}}>{{parameter.description_donors}}</md-option>
+                                    <md-option ng-repeat="parameter in parameters.data"  value={{parameter.id_donors}}>{{parameter.description_donors}}</md-option>
                                 </md-select>
                             </md-input-container>
                         </div>
@@ -347,7 +347,7 @@
                 <md-content class="md-padding">
                     <div layout="row" layout-xs="column" style="margin-top: -6px">
                         <div flex>
-                            <div><i class="material-icons" style="color: #00BCD4">person_pin</i><span>Informacion del cedente</span></div>
+                            <div><i class="material-icons" style="color: #00BCD4">person_pin</i><span>Informacion del Cedente</span></div>
                             <div style="margin-left: 40px;">
                                 <div><span style="color: #9E9E9E">Tipo de cendente</span>: <span>{{data.cedente}}</span></div>
                                 <div><span style="color: #9E9E9E">Número de Identificación</span>: <span>{{data.identificationcedente}}</span></div>

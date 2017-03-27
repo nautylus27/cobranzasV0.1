@@ -6,7 +6,7 @@ $this->title = 'Cobranzas Dataservip';
 <div>
     <div class="text-left color-white ripple-effect md-whiteframe-6dp" style="background-image: url(../../imagen/backgroud-montain.jpg); background-size: 100% 120%; height: 380px;">
         <div style="padding-top: 168px; font-size: 37px; margin-left: 20px">Sistema de control y seguimiento</div>
-        <div style=" margin-left: 27px">para la cartera moraza del transporte publico</div>
+        <div style=" margin-left: 27px">para la cartera moroza del transporte publico</div>
         <div style=" margin-left: 20px; margin-top: 10px;"> <md-button class="md-primary md-raised"  style="background-color: #00BCD4" >Leer Más</md-button></div>
     </div>
 </div>

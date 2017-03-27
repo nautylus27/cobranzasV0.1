@@ -70,13 +70,13 @@ AppAsset::register($this);
                 </md-content>
             </div>
         </div>
-        <div layout="row">
+        <div layout="row" ng-controller="newCollections">
             <div flex-gt-sm="20" flex="20">
                 <div class="row" style="margin-top: 64px;">
                     <div class="col-md-2" style="width: 293px;">
                         <div class="page-container" ui-view>
                             <div class="sidebar-menu fixed">
-                                <div class="sidebar-menu-inner ps-container">
+                                <div class="sidebar-menu-inner ps-container" >
                                     <header class="logo-env ng-scope" >
                                         <div class="logo">
                                         </div>
@@ -84,7 +84,7 @@ AppAsset::register($this);
                                     <section class="sidebar-user-info ng-scope" >
                                         <div class="sidebar-user-info-inner">
                                             <a href="#/app/extra-profile" class="user-profile">
-                                                <img src="http://themes.laborator.co/xenon/assets/images/user-4.png" width="60" height="60" class="img-circle img-corona" alt="user-pic">
+                                                <img src="../../imagen/customer-service.png" width="60" height="60" class="img-circle img-corona" alt="user-pic">
 
                                                 <span>
                                                     <strong>Israel David</strong>
@@ -107,7 +107,7 @@ AppAsset::register($this);
                                             </ul>
                                         </div>
                                     </section>
-                                    <sidebar-menu>
+                                    <sidebar-menu ng-hide="menuHorizontalIzq" >
                                         <ul id="main-menu" class="main-menu ng-scope" >
                                             <li class="ng-scope has-sub expanded">
                                                 <a href="#/app/dashboard" class="ng-scope">
@@ -137,6 +137,17 @@ AppAsset::register($this);
                                                         </a>
                                                     </li>
                                                 </ul>
+                                            </li>
+                                        </ul>
+                                    </sidebar-menu>
+                                    <sidebar-menu ng-show="menuHorizontalIzq">
+                                        <div style="padding-left: 10px;"><a href="javascripts:;"><i class="material-icons "  style="color: #FFC107;">reply</i> <md-tooltip md-direction="right"> Regresar al menu</md-tooltip>
+                                            </a><span style="color: #FFFFFF; margin-left: 79px"> Registros</span></div>
+                                        <ul  class="main-menu ng-scope">
+                                            <li ng-repeat="business in showCase" style="color:#FFFFFF; height: 40px;"> 
+                                                <a href="javascripts"  class="ng-scope">
+                                                    {{business.name_business}}
+                                                </a>
                                             </li>
                                         </ul>
                                     </sidebar-menu>

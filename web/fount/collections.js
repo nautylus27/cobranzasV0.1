@@ -5,7 +5,7 @@
  */
 
 
-var app = angular.module('collections', ['ngMaterial', 'toaster', 'datatables', 'ngCountTo']);
+var app = angular.module('collections', ['ngMaterial', 'toaster', 'datatables', 'ngCountTo', 'chart.js']);
 app.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
             .primaryPalette('blue-grey')
@@ -182,7 +182,9 @@ app.controller('login', ['$scope', 'toaster', '$http', function ($scope, toaster
                             showCloseButton: true,
                         });
                         if (parameters.type === "success") {
-                            window.location.href = "/dash/index";
+                            var parametersJson = JSON.stringify(parameters);
+                            var url = "/dash/index";
+                            window.location.href = url;
                         }
 
                     }, function (response) {
@@ -287,19 +289,7 @@ app.controller('AngularWayCtrl', ['$scope', 'toaster', '$http', function ($scope
 
 app.controller('countPay', function ($scope) {
 
-    $scope.countTo = 1860;
-    $scope.countFrom = 0;
-    $scope.filter = 'number';
 
-    $scope.countToendtnovencidas = 860;
-    $scope.countFromstartnovencidas = 0;
-    $scope.countToendtnovencidasporcen = 30;
-    $scope.countFromstartnovencidasporcen = 0;
-
-    $scope.countToendtvencidas = 1000;
-    $scope.countFromstartvencidas = 0;
-    $scope.countToendtvencidasporcen = 70;
-    $scope.countFromstartvencidasporcen = 0;
 
 
 
@@ -319,7 +309,7 @@ app.controller('countPay', function ($scope) {
 
 app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia) {
 
-
+    $scope.menuHorizontalIzq = false;
     $scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
     $scope.showModal = function (ev, arg) {
 
@@ -338,13 +328,71 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia) {
     };
 
 
-//    };
+    $scope.countTo = 1860;
+    $scope.countFrom = 0;
+    $scope.filter = 'number';
+
+    $scope.countToendtnovencidas = 860;
+    $scope.countFromstartnovencidas = 0;
+    $scope.countToendtnovencidasporcen = 30;
+    $scope.countFromstartnovencidasporcen = 0;
+
+    $scope.countToendtvencidas = 1000;
+    $scope.countFromstartvencidas = 0;
+    $scope.countToendtvencidasporcen = 70;
+    $scope.countFromstartvencidasporcen = 0;
+
+
+
+
+    $http({method: 'POST', url: '/donors/querytypedonors'}).
+            then(function (response) {
+                $scope.parameters = response.data;
+            }, function (response) {
+                $scope.data = response.data || "Request failed";
+                $scope.status = response.status;
+            });
+
+
+    $http({method: 'POST', url: '/colletions/tablereports'}).
+            then(function (response) {
+                var parameters = response.data;
+                $scope.showCase = parameters;
+
+
+            }, function (response) {
+                $scope.data = response.data || "Request failed";
+                $scope.status = response.status;
+            });
+
+    $scope.parJson = function (json) {
+        return angular.fromJson(json);
+    }
+
+    $scope.typeR = function (id_business) {
+     
+        $scope.menuHorizontalIzq = true;
+        $scope.effectHide = 'ng-hide';
+console.log (id_business)
+        $http({method: 'POST', url: '/colletions/queryclasificationreports', data: id_business}).
+                then(function (response) {
+                    console.log (response);
+//                    $scope.parameters = response.data;
+                    
+                }, function (response) {
+                    $scope.data = response.data || "Request failed";
+                    $scope.status = response.status;
+                });
+
+    }
+
+
 })
 
 
 
 
-function DialogController($scope, $mdDialog, $http) {
+function DialogController($scope, $mdDialog, $http, toaster) {
     $scope.hide = function () {
         $mdDialog.hide();
     };
@@ -372,19 +420,6 @@ function DialogController($scope, $mdDialog, $http) {
 //        });
     }
 
-
-
-
-
-
-
-
-}
-
-
-
-app.controller('modalNuevo', function ($scope, $http) {
-
     $http({method: 'POST', url: '/donors/querytypedonors'}).
             then(function (response) {
                 $scope.parameters = response.data;
@@ -394,24 +429,23 @@ app.controller('modalNuevo', function ($scope, $http) {
             });
 
 
-    $scope.data = {cedente: null, identificationcedente: null, typeIdentificationcedente: null, name: null, departamento: null, residencia: null, phone: null, email: null, numberaccount: null, typeaccount: null, bank:null, clasification:null, identificationacre:null, typeIdentification:null, nameacree:null, departamentoacree:null, residenciaacree:null, phoneacree:null, emailacreer:null, vradecuado:null, reportdate:null, che:null, ce:null, cp:null, fc:null, lc:null, li:null, pa:null, rc:null, rcb:null};
+
+
+
+    $scope.data = {cedente: null, identificationcedente: null, typeIdentificationcedente: null, name: null, departamento: null, residencia: null, phone: null, email: null, numberaccount: null, typeaccount: null, bank: null, clasification: null, identificationacre: null, typeIdentification: null, nameacree: null, departamentoacree: null, residenciaacree: null, phoneacree: null, emailacreer: null, vradecuado: null, reportdate: null, che: null, ce: null, cp: null, fc: null, lc: null, li: null, pa: null, rc: null, rcb: null};
 
     $scope.saveNew = function () {
-        console.log ($scope.data);
-        
         $http({method: 'POST', url: '/colletions/registernew', data: $scope.data}).
                 then(function (response) {
                     var parameters = response.data;
-                    console.log (parameters);
-//                    toaster.pop({
-//                        type: parameters.type,
-//                        title: parameters.title,
-//                        body: parameters.message,
-//                        showCloseButton: true,
-//                    });
-//                    if (parameters.type === "success") {
-//                        window.location.href = "/dash/index";
-//                    }
+                    console.log(parameters);
+                    toaster.pop({
+                        type: parameters.type,
+                        title: parameters.title,
+                        body: parameters.message,
+                        showCloseButton: true,
+                    });
+
 
                 }, function (response) {
                     $scope.data = response.data || "Request failed";
@@ -420,5 +454,90 @@ app.controller('modalNuevo', function ($scope, $http) {
     };
 
 
-})
+
+
+
+}
+
+
+app.controller("LineCtrl", function ($scope) {
+
+    $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
+    $scope.series = ['Series A', 'Series B'];
+    $scope.data = [
+        [65, 59, 80, 81, 56, 55, 40],
+        [28, 48, 40, 19, 86, 27, 90]
+    ];
+    $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+    };
+    $scope.datasetOverride = [{yAxisID: 'y-axis-1'}, {yAxisID: 'y-axis-2'}];
+    $scope.options = {
+        scales: {
+            yAxes: [
+                {
+                    id: 'y-axis-1',
+                    type: 'linear',
+                    display: true,
+                    position: 'left'
+                },
+                {
+                    id: 'y-axis-2',
+                    type: 'linear',
+                    display: true,
+                    position: 'right'
+                }
+            ]
+        }
+    };
+});
+
+app.controller("BarCtrl", function ($scope) {
+    $scope.labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
+    $scope.series = ['Series A', 'Series B'];
+
+    $scope.data = [
+        [65, 59, 80, 81, 56, 55, 40],
+        [28, 48, 40, 19, 86, 27, 90]
+    ];
+});
+
+
+app.controller("BaseCtrl",
+        function ($scope) {
+            $scope.labels = ["hace 30 o menos", "Entre 30 y 60", "Entre 60 y 90", "Mas de 90"];
+            $scope.data = [25, 50, 70, 100];
+            $scope.type = 'polarArea';
+
+            $scope.toggle = function () {
+                $scope.type = $scope.type === 'polarArea' ?
+                        'pie' : 'polarArea';
+            };
+        });
+
+
+
+
+app.controller('actualizarInformacion', ['$scope', 'toaster', '$http', function ($scope, toaster, $http) {
+
+        $scope.info = function () {
+            toaster.pop({
+                type: 'info',
+                title: 'Actualizando Informacion',
+                body: 'Buscando nuevo ingreso...',
+                showCloseButton: true,
+            });
+        };
+    }])
+
+app.controller('listBusiness', ['$scope', 'toaster', '$http', function ($scope, toaster, $http) {
+        $http({method: 'POST', url: '/donors/querytypedonors'}).
+                then(function (response) {
+                    $scope.parameters = response.data;
+                }, function (response) {
+                    $scope.data = response.data || "Request failed";
+                    $scope.status = response.status;
+                });
+
+    }])
 

@@ -16,6 +16,9 @@ use Yii;
  */
 class Users extends \yii\db\ActiveRecord {
 
+    
+    
+    public $id;
     /**
      * @inheritdoc
      */
@@ -50,5 +53,11 @@ class Users extends \yii\db\ActiveRecord {
     public static function validateUsers($parameters) {
        return $data = Yii::$app->db->createCommand("SELECT c.*, d.* FROM users AS c, employee AS d WHERE  c.password = '".$parameters['password']."' AND c.username='".$parameters['username']."';")->queryOne();
     }
+    
+ public static function infoEmployee($id_user)
+    {
+         return $data = Yii::$app->db->createCommand("SELECT c.*, d.* FROM users AS c, employee AS d WHERE  c.id_users = '".$id_user."';")->queryOne();
+    }
+
 
 }

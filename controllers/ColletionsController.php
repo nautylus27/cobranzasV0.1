@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use app\models\Cedentes;
 use app\models\Acreedores;
 use app\models\Bank;
+use app\models\Report;
 
 class ColletionsController extends \yii\web\Controller {
 
@@ -63,6 +64,7 @@ class ColletionsController extends \yii\web\Controller {
 
     public function actionIndex() {
         $this->layout = 'analist';
+
         return $this->render('index');
     }
 
@@ -76,6 +78,7 @@ class ColletionsController extends \yii\web\Controller {
         $postData = file_get_contents("php://input");
         $post = json_decode($postData, true);
         $parametersCedentes = [];
+
         $parametersCedentes['assignor'] = $post['cedente'];
         $parametersCedentes['type_identification_assignor'] = $post['typeIdentificationcedente'];
         $parametersCedentes['name_assignor'] = $post['name'];
@@ -105,18 +108,57 @@ class ColletionsController extends \yii\web\Controller {
         $modelAcreedor->number_identification = $post['identificationacre'];
         $modelAcreedor->parameters = json_encode($parametersAcreedores);
         $modelAcreedor->start_date = date('Y-m-d');
-        
-        $modelBank= new Bank;
-        $modelBank->numer_bank=$post['numberaccount'];
-        $modelBank->type_account=$post['typeaccount'];
-        $modelBank->name_bank=$post['bank'];
-        
-        
 
-        if ($modelCedentes->save()) {
+        $modelBank = new Bank;
+        $modelBank->numer_bank = $post['numberaccount'];
+        $modelBank->type_account = $post['typeaccount'];
+        $modelBank->name_bank = $post['bank'];
+
+
+
+        if ($modelCedentes->save() && $modelAcreedor->save() && $modelBank->save()) {
+
+            $session = Yii::$app->session;
+            $id_employee = $session['id_employee'];
+            $modelReports = new Report;
+            $modelReports->id_employee = $id_employee;
+            $modelReports->id_cedente = $modelCedentes->id_cedente;
+            $modelReports->id_acreedor = $modelAcreedor->id_acreedores;
+            $modelReports->id_bank = $modelBank->id_bank;
+            $modelReports->id_business = $post['cedente'];
+
+
+            $parametersCedentes['id_cendentes'] = $modelCedentes->id_cedente;
+            $parametersAcreedores['id_acreedor'] = $modelAcreedor->id_acreedores;
+//          
+            $parametros = [];
+            $parametros['cedentes'] = $parametersCedentes;
+            $parametros['acreedor'] = $parametersAcreedores;
+            $modelReports->parameters = json_encode($parametros);
+
             $modelBank->save();
-            $modelAcreedor->save();
+            if ($modelReports->save()) {
+                $response = Report::queryAllReports($id_employee);
+                echo json_encode($resquest = ["response" => $response, "message" => "Actualizando", "title" => "Registro Exitoso", "type" => "success"]);
+            }
         }
+    }
+
+    public function actionTablereports() {
+        $session = Yii::$app->session;
+        $id_employee = $session['id_employee'];
+        $response = Report::queryAllReports($id_employee);
+        echo json_encode($response);
+    }
+
+    public function actionQueryclasificationreports() {
+        $session = Yii::$app->session;
+        $id_employee = $session['id_employee'];
+        $postData = file_get_contents("php://input");
+        $id_clasification = json_decode($postData, true);
+       
+        $response = Report::queryReportsOne($id_clasification,$id_employee);
+        var_dump($response);
     }
 
 }

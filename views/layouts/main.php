@@ -85,8 +85,8 @@ AppAsset::register($this);
                 <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
             </div>
         </div>
-        <footer class="footer color-footer-main-black">
-            <div class="container color-white">
+        <footer class="footer color-footer-main-black" style="background-color: #757575 !important;">
+            <div class="container color-white" >
                 <p class="text-center" style="font-size: 12px;">&copy; COBRANZAS - DATASERVIP <?= date('Y') ?></p>
             </div>
         </footer>

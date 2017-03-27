@@ -18,6 +18,8 @@ module.exports = {
             '../../vendor/bower/AngularJS-Toaster/toaster.js',
             '../../vendor/bower/angular-datatables/demo/src/archives/dist/angular-datatables.min.js',
             '../../vendor/bower/angular-filter-count-to-master/angular-filter-count-to-master/dist/angular-filter-count-to.min.js',
+            '../../vendor/bower/Chart.js/dist/Chart.js',
+            '../../vendor/bower/angular-chart.js/dist/angular-chart.js',
             '../../web/fount/menu/js/bootstrap3.3.1.js',
             '../../web/fount/menu/js/customMn.js',
             '../../web/fount/menu/js/joinable.js',
