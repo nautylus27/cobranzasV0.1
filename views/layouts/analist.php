@@ -71,7 +71,7 @@ AppAsset::register($this);
             </div>
         </div>
         <div layout="row" ng-controller="newCollections">
-            <div flex-gt-sm="20" flex="20">
+            <div flex-gt-sm="20" flex="20" style="margin-right: -30px;">
                 <div class="row" style="margin-top: 64px;">
                     <div class="col-md-2" style="width: 293px;">
                         <div class="page-container" ui-view>
@@ -144,9 +144,9 @@ AppAsset::register($this);
                                         <div style="padding-left: 10px;"><a href="javascripts:;"><i class="material-icons "  style="color: #FFC107;">reply</i> <md-tooltip md-direction="right"> Regresar al menu</md-tooltip>
                                             </a><span style="color: #FFFFFF; margin-left: 79px"> Registros</span></div>
                                         <ul  class="main-menu ng-scope">
-                                            <li ng-repeat="business in showCase" style="color:#FFFFFF; height: 40px;"> 
-                                                <a href="javascripts"  class="ng-scope">
-                                                    {{business.name_business}}
+                                            <li  class="ng-scope" ng-repeat="business in showCase" style="height: 40px; color: #FFFFFF">
+                                                <a href="#/app/dashboard-variant-1"  class="ng-scope">
+                                                    {{business.name_business| uppercase}}
                                                 </a>
                                             </li>
                                         </ul>
@@ -159,7 +159,7 @@ AppAsset::register($this);
                     </div>
                 </div>
             </div>
-            <div flex-gt-sm="80" flex="40">
+            <div flex-gt-sm="95" flex="40">
                 <?= $content ?>
                 <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
             </div>

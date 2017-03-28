@@ -156,9 +156,16 @@ class ColletionsController extends \yii\web\Controller {
         $id_employee = $session['id_employee'];
         $postData = file_get_contents("php://input");
         $id_clasification = json_decode($postData, true);
+      
+        if ($id_clasification!=NULL){
+            $query="r.id_employee='".$id_employee."' AND b.id_business='".$id_clasification."'";
+        }
+        else {
+            $query="r.id_employee='".$id_employee."'";
+        }
        
-        $response = Report::queryReportsOne($id_clasification,$id_employee);
-        var_dump($response);
+        $response = Report::queryReportsOne($query);
+        echo json_encode($response);
     }
 
 }

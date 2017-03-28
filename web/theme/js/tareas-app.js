@@ -55789,31 +55789,19 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia) {
             });
 
 
-    $http({method: 'POST', url: '/colletions/tablereports'}).
-            then(function (response) {
-                var parameters = response.data;
-                $scope.showCase = parameters;
-
-
-            }, function (response) {
-                $scope.data = response.data || "Request failed";
-                $scope.status = response.status;
-            });
-
     $scope.parJson = function (json) {
         return angular.fromJson(json);
     }
-
+   
     $scope.typeR = function (id_business) {
-     
+
         $scope.menuHorizontalIzq = true;
         $scope.effectHide = 'ng-hide';
-console.log (id_business)
+        $scope.showCase = {};
         $http({method: 'POST', url: '/colletions/queryclasificationreports', data: id_business}).
                 then(function (response) {
-                    console.log (response);
-//                    $scope.parameters = response.data;
-                    
+                    var parameters = response.data;
+                    $scope.showCase = parameters;
                 }, function (response) {
                     $scope.data = response.data || "Request failed";
                     $scope.status = response.status;

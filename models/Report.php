@@ -57,8 +57,8 @@ class Report extends \yii\db\ActiveRecord
 
          return $data = Yii::$app->db->createCommand("SELECT * FROM report AS r INNER JOIN business AS b ON r.id_business=b.id_business WHERE r.id_employee='".$id_employee."'")->queryAll();
     }
-    public function queryReportsOne($id_business, $id_employee){
+    public function queryReportsOne($query){
 
-         return $data = Yii::$app->db->createCommand("SELECT * FROM report AS r INNER JOIN business AS b ON r.id_business=b.id_business WHERE r.id_employee='".$id_employee."' AND b.id_business='".$id_business."' ")->queryAll();
+         return $data = Yii::$app->db->createCommand("SELECT * FROM report AS r INNER JOIN business AS b ON r.id_business=b.id_business WHERE ".$query."")->queryAll();
     }
 }
