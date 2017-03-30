@@ -1,0 +1,310 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <table>
+    <thead><tr><th>Identificación</th><th>Número Documento</th><th>Nombres</th><th>Apellidos</th><th>Fecha de nacimiento</th><th>Sexo</th><th>Estado civil</th><th>Grupo sanguineo</th><th>Departamento y Ciudad</th><th>Dirección</th><th>Barrio</th><th>Tipo de Vivienda</th><th>Valor del arriendo</th><th>Estrato</th><th>Teléfono Principal</th><th>Teléfono Celular</th><th>Correo Electrónico</th><th>Libreta Militar</th><th>Experiencia Conduciendo</th><th>Años</th><th>Meses</th><th>Licencia de conduccion</th><th>Categoría</th><th>Fecha de vencimiento</th><th>Estudia Actualmente</th><th>Grado de Escolaridad</th><th>Nombre del estudio</th><th>Establecimiento</th><th>Año de Graduación</th><th>Vehículos</th></tr></thead>    <tbody> <tr class="odd"><td>Cédula de Ciudadanía</td><td>98574179</td><td>José Alejandro</td><td>Ortega Mira</td><td></td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Bello</li></ul></td><td></td><td></td><td></td><td></td><td></td><td>5118582</td><td>3225517020</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2017</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>43567385</td><td>MARITZA</td><td>ROJAS GRISALES</td><td></td><td>Femenino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td></td><td></td><td></td><td></td><td></td><td>4382136</td><td>3176152529</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2017</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>10086002</td><td>FERNANDO</td><td>ARIAS GRANADA</td><td></td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td></td><td></td><td></td><td></td><td></td><td>5139700</td><td>3206924455</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2017</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>1196970103</td><td>Alexandra Rosa</td><td>Florez Talaigua</td><td>Jue, 1996-12-26</td><td>Femenino</td><td>Soltero</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Córdoba›San Andrés de Sotavento</li></ul></td><td>tranv52 #52_61</td><td>alto bosque</td><td>Arriendo</td><td>250000</td><td>3</td><td>3205571159</td><td>3205571159</td><td>aflorestalaigua@gmail.com</td><td></td><td>Microbus</td><td>2</td><td>5</td><td>1196970103</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C2</li></ul></td><td>Mié, 2017-01-04</td><td>Sí</td><td>Tecnólogo</td><td>tecnico en seguridad ocupacional</td><td>cartagena</td><td>2015</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                ZXC123
+  </div>
+  </div>
+</td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>70130222</td><td>Luis Eduardo</td><td>Acevedo Franco</td><td></td><td>Masculino</td><td>Soltero</td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td>Cra23 # 102 C 59</td><td>Sto Domingo la Avanzada</td><td></td><td></td><td></td><td>5720585</td><td>3233375960</td><td>herdartor@hotmail.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>70039732</td><td>Adolfo León</td><td>Vélez</td><td></td><td>Masculino</td><td>Casado</td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td>Cra 29 C N° 16 C Sur - 91 Apto 701</td><td></td><td>Propia</td><td></td><td>4</td><td>2841186</td><td>3122131112</td><td>adolfovelezb@hotmail.com</td><td></td><td>Taxi</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>80369565</td><td>OMAR AGUSTO</td><td>BRAVO PERALTA</td><td>Mar, 1969-07-08</td><td>Masculino</td><td>Soltero</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>TV 72 F 39 G 04 APTO 609</td><td>CAMPIÑA</td><td>Propia</td><td></td><td>4</td><td>3132612881</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>80274121</td><td>JAIRO</td><td>VELASQUEZ ROMERO</td><td>Dom, 1968-05-05</td><td>Masculino</td><td>Soltero</td><td>A+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CRA 58 51 A 34 SUR</td><td>VILLA ANDREA</td><td>Propia</td><td></td><td>4</td><td>3212442813</td><td></td><td></td><td>Primera Categoría</td><td>Bus Intermunicipal</td><td>4</td><td></td><td>LC01007544814</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C2</li></ul></td><td>Dom, 2019-06-30</td><td></td><td></td><td></td><td></td><td>2016</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                WNX230
+  </div>
+  </div>
+</td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>19196096</td><td>LUIS ALBERTO</td><td>BORRAYOSPINA</td><td></td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>79734168</td><td>ALMEIRO RAMIRO</td><td>MARTINEZ MOENO</td><td></td><td>Masculino</td><td>Casado</td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CLL 66 59 31 TRR 9 APTO 803</td><td></td><td>Propia</td><td></td><td>3</td><td></td><td>3107650306</td><td></td><td>Primera Categoría</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>39798749</td><td>FLORALBA</td><td>PECRAZA ROJAS</td><td></td><td>Femenino</td><td>Soltero</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>7301047</td><td>JOSE MIGUEL</td><td>FORERO SERRANO</td><td></td><td>Masculino</td><td>Casado</td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CLL 63 D 70 D 54</td><td>LA CABAÑA</td><td>Propia</td><td></td><td>3</td><td>3973561</td><td>3123913983</td><td></td><td>Primera Categoría</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>80057687</td><td>YUBER FRANCISCO</td><td>GONZALEZ</td><td></td><td>Masculino</td><td>Soltero</td><td>O-</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CRA 8 A 22 71</td><td></td><td>Familiar</td><td></td><td>2</td><td>5786161</td><td>3144471267</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>79380636</td><td>FERNANDO</td><td>LADINO MESA</td><td>Dom, 1966-08-14</td><td>Masculino</td><td>Casado</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CLL 48 U BIS 3 B 62 SUR</td><td>DIANA TURBAY</td><td>Propia</td><td></td><td>2</td><td>3719655</td><td>3157716459</td><td></td><td>Primera Categoría</td><td></td><td></td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C2</li></ul></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>79767495</td><td>EDWIN ALEXIS</td><td>PEÑA CARRILLO</td><td>Sáb, 1976-03-27</td><td>Masculino</td><td>Soltero</td><td>A+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Cundinamarca›La Mesa</li></ul></td><td>CLL 3 3 03</td><td>CHAPINERO</td><td>Familiar</td><td></td><td>2</td><td>3208405892</td><td></td><td></td><td>Primera Categoría</td><td>Bus Intermunicipal</td><td>4</td><td></td><td>LC01007419597</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C2</li></ul></td><td>Vie, 2019-05-17</td><td></td><td></td><td></td><td></td><td>2016</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                SPN762
+  </div>
+  </div>
+</td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>79753682</td><td>ERNESTO</td><td>RODRIGUEZ MORALES</td><td>Lun, 1974-03-11</td><td>Masculino</td><td>Soltero</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CLL 39 A 90 A 93 SUR</td><td></td><td>Familiar</td><td></td><td>2</td><td>3213744374</td><td>3504491137</td><td>8POCHO1374@HOTMAIL.COM</td><td></td><td>Bus Intermunicipal</td><td>2</td><td></td><td>LC01005550825</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C1</li></ul></td><td>Sáb, 2017-08-12</td><td></td><td></td><td></td><td></td><td>2016</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                SOP399
+  </div>
+  </div>
+</td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>4417696</td><td>RAMIRO</td><td>GIRALDO CALDERON</td><td></td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>73197223</td><td>Hans Ramiro</td><td>Noriega Polo</td><td></td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>55222269</td><td>Sirly Patricia</td><td>Perez</td><td></td><td>Femenino</td><td>Unión libre</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Atlántico›Baranoa</li></ul></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>55222269</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C1</li></ul></td><td>Sáb, 2016-08-20</td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>43000609</td><td>Alba Lucía</td><td>Vásquez</td><td></td><td>Femenino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td>Clle 80 # 68 83 2do Piso</td><td>Barrio Córdoba</td><td></td><td></td><td></td><td>4424602</td><td>3147801441</td><td>alba5992@hotmail.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>79533194</td><td>Jose Luis</td><td>Pinilla Cleves</td><td></td><td>Masculino</td><td></td><td></td><td></td><td>CALLE 50 N 43 - 96</td><td></td><td></td><td></td><td></td><td></td><td>3115276784</td><td></td><td></td><td></td><td></td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C1</li></ul></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>41963387</td><td>angela maria</td><td>varon guevara</td><td>Vie, 1985-08-30</td><td>Femenino</td><td>Soltero</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Quindío›Armenia</li></ul></td><td>clle 5n  20 29 cs 8</td><td>alamos</td><td>Familiar</td><td></td><td>4</td><td>3147508089</td><td>3147508089</td><td>angela.varon@hotmail.com</td><td></td><td>Microbus</td><td></td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C2</li></ul></td><td></td><td>No</td><td>Universitario</td><td>negocios internacionales</td><td>universidad del quindio</td><td>2010</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>1144141392</td><td>Jose Gabriel</td><td>Osorio</td><td></td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>30339707</td><td>LORENA</td><td>DIAZ LOPEZ</td><td></td><td>Femenino</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2016</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>11255680</td><td>CARLOS EDUARDO</td><td>SERRANO HUERFANO</td><td>Mié, 1980-09-24</td><td>Masculino</td><td>Casado</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CDDOO3444</td><td>SANTA ISA</td><td>Propia</td><td></td><td>3</td><td>2567890</td><td>3124567890</td><td>SDFFF@EHOTMAIL</td><td></td><td><div class="field-item field-item-0">Bus Intermunicipal</div><div class="field-item field-item-1">Camperos</div><div class="field-item field-item-2">Chivas</div><div class="field-item field-item-3">Mula</div><div class="field-item field-item-4">Microbus</div></td><td>23</td><td>6</td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C5</li></ul></td><td></td><td></td><td>Bachillerato</td><td></td><td></td><td>2015</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>1036646944</td><td>JHONATAN ESTIVEN</td><td>CALLE VALENCIA</td><td>Mié, 1993-04-21</td><td>Masculino</td><td>Soltero</td><td>O+</td><td></td><td>CRA57NUMERO9SUR37</td><td></td><td>Familiar</td><td></td><td></td><td>2855037</td><td>3148169539</td><td>jhonatancalle@hotmail.com</td><td>Segunda Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td>SENA</td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>1036939210</td><td>EDURLEY</td><td>CARRANZA LONDONO</td><td>Mié, 1990-12-12</td><td>Masculino</td><td>Casado</td><td>A+</td><td></td><td>cr 55a no 66b-10</td><td></td><td>Familiar</td><td></td><td>3</td><td>3005072330</td><td></td><td>edurleyl@gmail.com</td><td>Segunda Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td>1036939210</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C4</li></ul></td><td>Vie, 0001-11-30</td><td>No</td><td></td><td></td><td>universidad javeriana</td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>13950426</td><td>JOSE UBALDO</td><td>REYES ZAFRA</td><td>Vie, 1953-07-17</td><td>Masculino</td><td>Unión libre</td><td>B+</td><td></td><td>CARRERA 3 N° 6 A 08</td><td></td><td>Propia</td><td></td><td>2</td><td>7221352</td><td>3208960981</td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td>11001000-948728</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C3</li></ul></td><td>Vie, 2015-06-19</td><td>No</td><td></td><td></td><td></td><td>1970</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                SOE737
+  </div>
+  </div>
+</td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>7678888</td><td>carlos</td><td>ramirez</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>66666666</td><td>JUAN CARLOS</td><td>RESTREPO</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>94450812</td><td>DANIELA</td><td>OSPINA</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>NIT</td><td>890600427</td><td>AUTO LINEAS LAS ACACIAS LTDA</td><td>AUTOLINEASLASCACIAS LTDA</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CLL 1 27 A 08</td><td>SANTA ISABEL</td><td>Familiar</td><td></td><td></td><td>2018467</td><td></td><td>gerenciaautolineaslascacias@gmail.com</td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td></td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>11303319</td><td>CARLOS ARTURO</td><td>MONTANO GARCIA</td><td>Sáb, 1959-11-21</td><td>Masculino</td><td>Casado</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>CRA 80 26 58 SUR BLOQUE 36 INTERIOR 2 APTO 401</td><td>KENNEDY</td><td>Familiar</td><td></td><td>2</td><td>3133911537</td><td></td><td></td><td>Segunda Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td></td><td>No</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>31787567</td><td>HUMBERTO</td><td>ARIAS</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>6666666</td><td>ARMANDO</td><td>VALENCIA</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>333333</td><td>dario</td><td>molina</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>79601357</td><td>OSCAR</td><td>VARGAS QUINTERO</td><td>Jue, 1970-01-01</td><td>Masculino</td><td></td><td></td><td></td><td>CRA 46 # 59-27</td><td>BOSTON</td><td></td><td></td><td></td><td>3004646</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>76109833</td><td>CARLOS ALBERTO</td><td>RAMOS</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>20445788</td><td>JORGE</td><td>FERNANDEZ</td><td>Vie, 1978-01-20</td><td>Masculino</td><td>Soltero</td><td>O+</td><td></td><td>cra 22 no 30 45</td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td>jfernandez@gmail.com</td><td>Primera Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>72174333</td><td>NARVAEZ DOMIGUEZ</td><td>WILFRIDO JOSE</td><td>Sáb, 1971-04-10</td><td>Masculino</td><td>Casado</td><td>A+</td><td></td><td>CRA 12 A N64D-09 NUEVO MILENIO</td><td></td><td>Familiar</td><td></td><td></td><td>3014702790</td><td></td><td></td><td></td><td>Taxi</td><td></td><td></td><td>7922613-5</td><td></td><td>Dom, 2014-06-08</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>9876543</td><td>JOSE ANIBAL</td><td>RIOS ZAPATA</td><td>Jue, 1970-01-01</td><td>Masculino</td><td>Casado</td><td>AB+</td><td><ul class="hierarchical-select-lineages"></ul></td><td>Carrera 85 n 15-56</td><td></td><td>Familiar</td><td></td><td></td><td>5982687</td><td></td><td></td><td>Segunda Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                YTI786
+  </div>
+  </div>
+</td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>20345678</td><td>JOSE</td><td>PALMERA</td><td>Jue, 1960-04-28</td><td>Masculino</td><td>Soltero</td><td>O+</td><td><ul class="hierarchical-select-lineages"></ul></td><td>cra 50 n 67 80</td><td></td><td>Familiar</td><td></td><td>3</td><td>2309457</td><td>302309199</td><td>jp.plata@hotmail.com</td><td>Primera Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td>111100000001010</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C6</li></ul></td><td>Lun, 2013-09-23</td><td>Sí</td><td></td><td></td><td>don bosco</td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>16352164</td><td>ORLANDO</td><td>CEBALLOS URIBE</td><td>Mar, 1955-07-05</td><td>Masculino</td><td>Casado</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Atlántico›Barranquilla</li></ul></td><td>cll43 #33-73</td><td>chiquinquira</td><td></td><td></td><td></td><td>3702011</td><td>315 3636684</td><td>orceur@yahoo.com</td><td>Segunda Categoría</td><td></td><td>1</td><td>5</td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C1</li></ul></td><td></td><td>No</td><td>Bachillerato</td><td></td><td></td><td>1970</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                SXP166
+  </div>
+  </div>
+</td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>20551343</td><td>EMIRO</td><td>ARBOLEDA</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>16027274</td><td>MAURICIO</td><td>ESCOBAR</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>52935835</td><td>GLORIA AMPARO</td><td>CANO GARCIA</td><td>Vie, 0001-11-30</td><td>Masculino</td><td>Unión libre</td><td>O-</td><td></td><td>TRANS 44 NO 99 C 70</td><td>MIRAMAR</td><td></td><td></td><td></td><td>4043092</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>43181716</td><td>ANDREA</td><td>RIOS</td><td>Mar, 1970-12-01</td><td>Masculino</td><td>Viudo</td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>43049064</td><td>NATALIA</td><td>ARANGO</td><td>Vie, 0001-11-30</td><td>Masculino</td><td>Soltero</td><td>A+</td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>98486841</td><td>JHON ALBEIRO</td><td>HERNANDEZ ALZATE</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>18493432</td><td>ROBERT EDGARDO</td><td>GONZALEZ MATALLANA</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td>RECREO Mz B # 25</td><td></td><td></td><td></td><td></td><td>7403542</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>43205590</td><td>CLAUDIA YALINA</td><td>VELEZ MUÑOZ</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td></td><td>ASDF</td><td>SFDGG</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>42872556</td><td>ANGELA MARIA</td><td>MEJIA SUAREZ</td><td>Vie, 0001-11-30</td><td>Femenino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"></ul></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>4335982</td><td>EDUARDO</td><td>ESCOBAR TABARES</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>15370441</td><td>JAIME DUQUE</td><td>ORREGO</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td></td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>9726637</td><td>CARLOS AUGUSTO</td><td>GIRALDOBEDOYA</td><td>Sáb, 1980-12-13</td><td>Masculino</td><td>Casado</td><td>A+</td><td><ul class="hierarchical-select-lineages"></ul></td><td>Cl 3 N 13 - 18</td><td></td><td>Familiar</td><td></td><td>3</td><td>7469484</td><td>3146178255</td><td>rtq@une.net.co</td><td>Primera Categoría</td><td>Taxi</td><td></td><td></td><td>22344566</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C4</li></ul></td><td>Mié, 2009-09-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>8164234</td><td>IRLAN RODRIGO</td><td>DURANGO ESTRADA</td><td>Jue, 1970-01-01</td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td>calle 25 # 65 b 32</td><td>trinidad</td><td></td><td></td><td></td><td>5835143</td><td>3194305109</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>1414</td><td>cristian</td><td>mosquera</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>1010</td><td>CRISTIAN</td><td>MOSQUERA</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>51</td><td>A</td><td>A</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>321654</td><td>Juan</td><td>Martinez</td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Jue, 1970-01-01</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>71646840</td><td>EDGAR ALBERTO</td><td>VALENCIA CASTAÑO</td><td>Lun, 1870-10-03</td><td>Masculino</td><td>Casado</td><td></td><td><ul class="hierarchical-select-lineages"></ul></td><td>CRA 19 N 3-25</td><td></td><td>Familiar</td><td></td><td>2</td><td>4521254</td><td>3112564878</td><td></td><td>Segunda Categoría</td><td>Taxi</td><td></td><td></td><td>124546</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C2</li></ul></td><td>Lun, 2007-12-03</td><td>No</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>79121855</td><td>GUILLERMO</td><td>VILLAR CLEVES</td><td>Vie, 1962-07-06</td><td>Masculino</td><td>Casado</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>222</td><td>CVCVC</td><td>CVCV</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"></ul></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>515</td><td>ALFREDO</td><td>RESTREPO</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"></ul></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>43514509</td><td>LUZ ESTELLA</td><td>ZAPATA COLORADO</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"></ul></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>1128414618</td><td>DANIEL ALBERTO</td><td>MONTOYA LONDONO</td><td>Dom, 1987-01-18</td><td>Masculino</td><td>Soltero</td><td>A+</td><td><ul class="hierarchical-select-lineages"></ul></td><td>cra 123</td><td></td><td>Familiar</td><td></td><td>2</td><td>4929975</td><td>3116148938</td><td>danielpk@hotmail.com</td><td>Segunda Categoría</td><td>Taxi</td><td></td><td></td><td>1128414618</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C4</li></ul></td><td>Sáb, 2008-03-22</td><td>No</td><td></td><td></td><td>ATEC</td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>43730361</td><td>Claudia</td><td>Varela</td><td>Vie, 0001-11-30</td><td>Femenino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"></ul></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>1020396201</td><td>CRISTIAN</td><td>MOSQUERA</td><td>Jue, 1986-05-15</td><td>Masculino</td><td>Casado</td><td>O-</td><td><ul class="hierarchical-select-lineages"></ul></td><td>cr 63 da # 103 dd 31</td><td></td><td>Familiar</td><td></td><td></td><td>3016623483</td><td></td><td></td><td>Segunda Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td>1020396201</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C1</li></ul></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>15455886</td><td>LUIS CARLOS</td><td>CANO PALACIO</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td></td><td></td><td></td><td>Familiar</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td></td><td>Vie, 0001-11-30</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-field-placa-value">
+                TIM157
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                TPN858
+  </div>
+  </div>
+</td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>71606869</td><td>DARIO DE JESUS</td><td>SERNA MU?OZ</td><td>Dom, 1961-09-10</td><td>Masculino</td><td></td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Abejorral</li></ul></td><td>K 81  3 A SUR 91</td><td></td><td></td><td></td><td></td><td>2567667</td><td>3152768107</td><td></td><td></td><td></td><td></td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C5</li></ul></td><td></td><td></td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>43917379</td><td>DIANA CAROLINA</td><td>PEREZ JARAMILLO</td><td>Mar, 1983-11-29</td><td>Femenino</td><td>Soltero</td><td>A+</td><td></td><td>CRA 106 N66-13</td><td></td><td>Familiar</td><td></td><td>3</td><td>4743064</td><td>3136722759</td><td>krojllo@hotmail.com</td><td></td><td>Bus Intermunicipal</td><td></td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C4</li></ul></td><td>Vie, 0001-11-30</td><td>No</td><td></td><td></td><td>LICEO EL PEDREGAL</td><td>1970</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                TIY376
+  </div>
+  </div>
+</td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>15322423</td><td>LEONEL DE JESUS</td><td>VALENCIA TOBON</td><td>Vie, 0001-11-30</td><td>Masculino</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td>Clle 55 # 43 - 23</td><td>Villa Nueva</td><td></td><td></td><td></td><td>2180337</td><td>3152860521</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1970</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                TRE384
+  </div>
+  </div>
+</td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>71699781</td><td>ALBERTO</td><td>VALENCIA GUTIERREZ</td><td>Vie, 1989-09-08</td><td>Masculino</td><td>Casado</td><td>A+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Caldas›Aguadas</li></ul></td><td>Carrera 4 Nª 7-4</td><td>Sausal</td><td>Familiar</td><td></td><td>2</td><td>9 87 65 43</td><td>315 365 47 09</td><td>contactenos@dataservip.com.co</td><td>Segunda Categoría</td><td><div class="field-item field-item-0">Bus Intermunicipal</div><div class="field-item field-item-1">Especiales</div><div class="field-item field-item-2">Motocarro</div><div class="field-item field-item-3">Taxi</div><div class="field-item field-item-4">Camión</div></td><td></td><td>8</td><td>987654332</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">A2: (antes categoría 2)</li></ul></td><td>Mar, 2021-07-13</td><td>No</td><td>Post-grado</td><td>Curso manejo defensivo</td><td>Sena</td><td>2013</td><td>  <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-field-placa-value">
+                GFD123
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                AAA111
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                MMM000
+  </div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                UUU000
+  </div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                VKH323
+  </div>
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                OOO111
+  </div>
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                SQC972
+  </div>
+  </div>
+  <div class="views-row views-row-8 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                SQD323
+  </div>
+  </div>
+  <div class="views-row views-row-9 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                SQC778
+  </div>
+  </div>
+  <div class="views-row views-row-10 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                SQD376
+  </div>
+  </div>
+  <div class="views-row views-row-11 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                SQC738
+  </div>
+  </div>
+  <div class="views-row views-row-12 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                STH123
+  </div>
+  </div>
+  <div class="views-row views-row-13 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                OOO000
+  </div>
+  </div>
+  <div class="views-row views-row-14 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                BXC124
+  </div>
+  </div>
+  <div class="views-row views-row-15 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                AAA000
+  </div>
+  </div>
+  <div class="views-row views-row-16 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                ABC123
+  </div>
+  </div>
+  <div class="views-row views-row-17 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                VOV764
+  </div>
+  </div>
+  <div class="views-row views-row-18 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                UYT876
+  </div>
+  </div>
+  <div class="views-row views-row-19 views-row-odd views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                ABC001
+  </div>
+  </div>
+</td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>1234</td><td>WILSON ALBERTO</td><td>RAM?REZ VALENCIA</td><td>Dom, 1970-06-14</td><td>Masculino</td><td>Casado</td><td>O+</td><td></td><td>Dg 30 E # 35 Sur 006 Apt 234</td><td></td><td>Familiar</td><td></td><td>5</td><td>336 54 78</td><td>310 2658978</td><td>aramirez2@hotmail.com</td><td>Primera Categoría</td><td>Bus Intermunicipal</td><td></td><td></td><td>322456</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C2</li></ul></td><td>Mié, 2008-10-22</td><td>Sí</td><td></td><td></td><td></td><td>1970</td><td></td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>1036646944</td><td>jhonatan estiven</td><td>calle valencia</td><td>Mié, 1993-04-21</td><td>Masculino</td><td>Soltero</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Antioquia›Medellín</li></ul></td><td>carrera57numero9sur37</td><td>guayabal</td><td>Familiar</td><td></td><td>3</td><td>2855037</td><td>3148169539</td><td>jhonatancalle@hotmail.com</td><td>Segunda Categoría</td><td><div class="field-item field-item-0">Taxi</div><div class="field-item field-item-1">Mula</div></td><td></td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C1</li></ul></td><td></td><td>Sí</td><td>Tecnólogo</td><td>tecnologia en organizacion de eventos</td><td>sena</td><td>2015</td><td></td> </tr>
+ <tr class="odd"><td>Cédula de Ciudadanía</td><td>94468471</td><td>WILSON DONEY</td><td>VERA REYES</td><td>Vie, 1979-02-09</td><td>Masculino</td><td>Soltero</td><td>B+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Valle del Cauca›Cali</li></ul></td><td>CALLE 54 # 86-87</td><td>JARDIN</td><td>Familiar</td><td></td><td>3</td><td>7037131</td><td>3013925496</td><td>direccionregionalbogota@dataservip.com.co</td><td>Segunda Categoría</td><td><div class="field-item field-item-0">Bus Intermunicipal</div><div class="field-item field-item-1">Chivas</div><div class="field-item field-item-2">Especiales</div><div class="field-item field-item-3">Taxi</div><div class="field-item field-item-4">Bus Urbano</div><div class="field-item field-item-5">Tractomula</div></td><td>25</td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C1</li></ul></td><td></td><td>Sí</td><td>Universitario</td><td><div class="field-item field-item-0">ADMINISTRACION DE EMPRESAS</div><div class="field-item field-item-1">PROFESIONAL EN MERCADEO</div></td><td><div class="field-item field-item-0">UNIVERSIDAD SANTIAGO DE CALI</div><div class="field-item field-item-1">UNIVERSIDAD  DEL ROSARIO</div></td><td><div class="field-item field-item-0">2002</div><div class="field-item field-item-1">2010</div></td><td>  <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-field-placa-value">
+                vxx123
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                UVX485
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                VYZ123
+  </div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                VCV678
+  </div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-field-placa-value">
+                vxy123
+  </div>
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field-field-placa-value">
+                vfk123
+  </div>
+  </div>
+  <div class="views-row views-row-7 views-row-odd views-row-last">
+      
+  <div class="views-field-field-placa-value">
+                vab123
+  </div>
+  </div>
+</td> </tr>
+ <tr class="even"><td>Cédula de Ciudadanía</td><td>79506156</td><td>ORLANDO</td><td>VARGAS SÁNCHEZ</td><td>Jue, 1965-03-25</td><td>Masculino</td><td>Unión libre</td><td>O+</td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">Distrito Capital›Bogotá</li></ul></td><td>Carrera 87 d N° 45 56</td><td>América Niza</td><td>Propia</td><td></td><td></td><td>4445499</td><td>3218527343</td><td>ovargas319@gmail.com</td><td>Primera Categoría</td><td></td><td></td><td></td><td></td><td><ul class="hierarchical-select-lineages"><li class="lineage-0 odd first last">C4</li></ul></td><td></td><td></td><td>Universitario</td><td>Derecho y Ciencis Políticas</td><td>Universidad de Medellín</td><td>2001</td><td></td> </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

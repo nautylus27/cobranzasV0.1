@@ -55742,9 +55742,10 @@ app.controller('countPay', function ($scope) {
 
 
 
-app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia) {
+app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia, $interval) {
 
     $scope.menuHorizontalIzq = false;
+    $scope.loadtable = false;
     $scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
     $scope.showModal = function (ev, arg) {
 
@@ -55769,13 +55770,13 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia) {
 
     $scope.countToendtnovencidas = 860;
     $scope.countFromstartnovencidas = 0;
-    $scope.countToendtnovencidasporcen = 30;
-    $scope.countFromstartnovencidasporcen = 0;
+//    $scope.countToendtnovencidasporcen = 30;
+//    $scope.countFromstartnovencidasporcen = 0;
 
     $scope.countToendtvencidas = 1000;
     $scope.countFromstartvencidas = 0;
-    $scope.countToendtvencidasporcen = 70;
-    $scope.countFromstartvencidasporcen = 0;
+//    $scope.countToendtvencidasporcen = 70;
+//    $scope.countFromstartvencidasporcen = 0;
 
 
 
@@ -55788,26 +55789,50 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia) {
                 $scope.status = response.status;
             });
 
-
     $scope.parJson = function (json) {
         return angular.fromJson(json);
-    }
-   
+        };
+
     $scope.typeR = function (id_business) {
 
         $scope.menuHorizontalIzq = true;
+        $scope.loadtable = true;
         $scope.effectHide = 'ng-hide';
         $scope.showCase = {};
         $http({method: 'POST', url: '/colletions/queryclasificationreports', data: id_business}).
                 then(function (response) {
+
                     var parameters = response.data;
-                    $scope.showCase = parameters;
+                    $scope.showCase = parameters.response;
+                    $scope.loadtable = false;
+                    $scope.countTo=parameters.summatory;
                 }, function (response) {
                     $scope.data = response.data || "Request failed";
                     $scope.status = response.status;
                 });
 
+
+
+
     }
+
+
+    var self = this;
+
+    self.activated = true;
+    self.determinateValue = 30;
+
+    // Iterate every 100ms, non-stop and increment
+    // the Determinate loader.
+    $interval(function () {
+
+        self.determinateValue += 1;
+        if (self.determinateValue > 100) {
+            self.determinateValue = 30;
+        }
+
+    }, 100);
+
 
 
 })

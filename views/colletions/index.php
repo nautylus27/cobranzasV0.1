@@ -1,7 +1,14 @@
-<div layout="row" class="md-whiteframe-6dp" layout-xs="column" style="padding-top: 10px; position: static; margin-top: 60px; padding-right: 10px; padding-left: 10px; background-color: #E0E0E0;height: 186px;">
+<div layout="row" class="md-whiteframe-6dp " layout-xs="column" style="padding-top: 10px; position: static; margin-top: 65px; padding-right: 10px; padding-left: 10px; background-color: rgba(44, 46, 47, 0.75);height: 186px; margin-right: 2px;">
     <div flex layout="column" style="margin-left:10px;" >
         <div style="height: 91px; margin-top: 10px;">
-            <div><span style="font-size: 26px; color:#757575">Detalles de la cartera de cobro</span></div>
+            <div layout="row" layout-xs="column">
+                <div flex>
+                   <span style="font-size: 26px; color:#fafafa">Detalles de la cartera de cobro</span>
+                </div>
+                <div flex class="text-right">
+                    <span style="color: #BDBDBD">Fecha (<?php echo date('Y-m-d'); ?>)</span>
+                </div>
+            </div>
             <div><span style="color: #BDBDBD; font-size: 13px;">Formulario para ingresar la información de los Cedentes y relacionarlos con sus respectivos Acreedores </span></div>
             <div>
                 <div layout="row" layout-xs="column" style="margin-top: 43px;">
@@ -16,59 +23,68 @@
                     </div>
                     <div flex class="text-center" style="margin-top: -26px;">
                         <md-input-container class="md-block" flex-gt-sm>
-                            <div><span ng-count-to="{{countTo}}" value="{{countFrom}}" duration="4" filter="currency" params="$" style="color: #009688; font-size: 30px" ></span></div>
-                            <div><span style="color:#757575;">Valor total a cobrar</span></div>
+                            <div><span ng-count-to="{{countTo}}" value="{{countFrom}}" duration="4" filter="currency" params="$" style="color: #FFC107; font-size: 30px" ></span></div>
+                            <div><span style="color:#fafafa;">Valor total a cobrar</span></div>
                         </md-input-container>
                     </div>
                     <div flex class="text-center" style="margin-top: -26px;">
                         <md-input-container class="md-block" flex-gt-sm>
-                            <div><span ng-count-to="{{countTo}}" value="{{countFrom}}" duration="4" filter="currency" params="$" style="color:#03A9F4; font-size: 30px" ></span></div>
-                            <div><span style="color:#757575;">No Vencidas</span></div>
+                            <div><span ng-count-to="{{countToendtnovencidas}}" value="{{countFromstartnovencidas}}" duration="4" filter="currency" params="$" style="color:#FFC107; font-size: 30px" ></span></div>
+                            <div><span style="color:#fafafa;">No Vencidas</span></div>
                         </md-input-container>
                     </div>
                     <div flex class="text-center" style="margin-top: -26px;">
                         <md-input-container class="md-block" flex-gt-sm>
-                            <div><span ng-count-to="{{countTo}}" value="{{countFrom}}" duration="4" filter="currency" params="$" style="color: #C62828; font-size: 30px"></span></div>
-                            <div><span style="color:#757575;">Vencidas</span></div>
+                            <div><span ng-count-to="{{countToendtvencidas}}" value="{{countFromstartvencidas}}" duration="4" filter="currency" params="$" style="color: #FFC107; font-size: 30px"></span></div>
+                            <div><span style="color:#fafafa;">Vencidas</span></div>
                         </md-input-container>
                     </div>
-                    <div flex class="text-right" style="margin-top: 31px;">
+                    <div flex="10" class="text-right" style="margin-top: 31px;">
                         <md-button class="md-fab md-primary" aria-label="Use Android" style="background-color: #00BCD4" ng-click="showModal($event, ['/collections/modelnew'])">
                             <i class="material-icons" style=" font-size: 30px; padding-top: 10px;">note_add</i>
                         </md-button>
                     </div>
+                   
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div layout="row"  style="height:540px;">
-    <div flex layout="column" style="margin-left: 10px; margin-top: 60px;" >
-        <table datatable="ng" class="row-border hover" ng-cloak="">
+<div layout="row"  style="height:540px;" ng-cloak>
+    <div flex layout="column" style="margin-left: 10px; margin-top: 60px;" ng-hide="loadtable" >
+        <table datatable="ng" class="row-border hover" ng-cloak="" >
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Clasificación</th>
-                    <th>Nombre</th>
                     <th>Teléfono</th>
                     <th>Correo</th>
-                    <th>Valor Adeudado</th>
+                    <th style="text-align: center">Valor Adeudado</th>
+                    <th>Intereses</th>
+                    <th>Total A Pagar</th>
                     <th>Fecha de Reporte</th>
+                    <th>Opciones</th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="person in showCase" ng-init="myInfo = parJson(person.parameters)" >
-                    <td>{{myInfo.cedentes.name_assignor}}</td>
-                    <td>{{myInfo.acreedor.clasification}}</td>
                     <td>{{myInfo.acreedor.name_creditor}}</td>
                     <td>{{myInfo.acreedor.phone_creditor}}</td>
                     <td>{{myInfo.acreedor.email_creditor}}</td>
-                    <td>{{myInfo.acreedor.vr_adeudado}}</td>
+                    <td style="text-align: center; color: #FF0000">{{myInfo.acreedor.vr_adeudado|currency}}</td>
+                    <td></td>
+                    <td></td>
                     <td>{{myInfo.acreedor.date_report}}</td>
+                    <td><i class="material-icons">assignment_ind</i></td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <div ng-show="loadtable" style="margin-left: 25%;margin-right: 25%;width: 735px; margin-top: 176px;">
+        <div style="margin-left: 44%; margin-right: 50%; margin-bottom: 30px;"><md-progress-circular md-mode="indeterminate"></md-progress-circular></div>
+        <hr>
+        <div class="text-center"><span style="font-size: 20px; color:#FFC107">Cargando Data...</span></div>
+     </div>
+   
 </div>
 
 

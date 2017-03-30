@@ -9,7 +9,8 @@ use yii\filters\VerbFilter;
 use app\models\Cedentes;
 use app\models\Acreedores;
 use app\models\Bank;
-use app\models\Report;
+use app\models\Reports;
+use app\models\Business;
 
 class ColletionsController extends \yii\web\Controller {
 
@@ -120,12 +121,21 @@ class ColletionsController extends \yii\web\Controller {
 
             $session = Yii::$app->session;
             $id_employee = $session['id_employee'];
-            $modelReports = new Report;
+            
+            $modelBusiness= new Business;
+            $modelBusiness->name_business=$post['name'];
+            $modelBusiness->id_type_donors=$post['cedente'];
+            $modelBusiness->start_date=date('Y-m-d');
+            $modelBusiness->save();
+            
+            $modelReports = new Reports;
             $modelReports->id_employee = $id_employee;
             $modelReports->id_cedente = $modelCedentes->id_cedente;
             $modelReports->id_acreedor = $modelAcreedor->id_acreedores;
             $modelReports->id_bank = $modelBank->id_bank;
-            $modelReports->id_business = $post['cedente'];
+            $modelReports->id_business = $modelBusiness->id_business;
+            
+         
 
 
             $parametersCedentes['id_cendentes'] = $modelCedentes->id_cedente;
@@ -138,7 +148,7 @@ class ColletionsController extends \yii\web\Controller {
 
             $modelBank->save();
             if ($modelReports->save()) {
-                $response = Report::queryAllReports($id_employee);
+                $response = Reports::queryAllReports($id_employee);
                 echo json_encode($resquest = ["response" => $response, "message" => "Actualizando", "title" => "Registro Exitoso", "type" => "success"]);
             }
         }
@@ -147,7 +157,7 @@ class ColletionsController extends \yii\web\Controller {
     public function actionTablereports() {
         $session = Yii::$app->session;
         $id_employee = $session['id_employee'];
-        $response = Report::queryAllReports($id_employee);
+        $response = Reports::queryAllReports($id_employee);
         echo json_encode($response);
     }
 
@@ -158,14 +168,55 @@ class ColletionsController extends \yii\web\Controller {
         $id_clasification = json_decode($postData, true);
       
         if ($id_clasification!=NULL){
-            $query="r.id_employee='".$id_employee."' AND b.id_business='".$id_clasification."'";
+            $query="r.id_employee='".$id_employee."' AND b.id_type_donors='".$id_clasification."'";
         }
         else {
             $query="r.id_employee='".$id_employee."'";
         }
        
-        $response = Report::queryReportsOne($query);
-        echo json_encode($response);
+        $response = Reports::queryReportsOne($query);
+  
+        $summatory=0;
+        foreach ($response as $value) {
+            $summatory=$summatory + json_decode($value['parameters'])->acreedor->vr_adeudado;
+        }
+
+         echo json_encode($resquest = ["response" => $response, "summatory" => $summatory]);
+    }
+    
+    
+    public function actionImportexcel(){
+//        $objPHPExcel = new \PHPExcel();
+        $inputFile = "uploads/prueba.xlsx";
+        try{
+            $inputFileType= \PHPExcel_IOFactory::identify($inputFile);
+            $objReader = \PHPExcel_IOFactory::createReader($inputFileType);
+            $objPHPExcel =$objReader->load($inputFile);
+            
+        }catch(Exception $e){
+            die ('Error');
+        }
+        
+        $sheet =$objPHPExcel->getSheet(0);
+        $highestRow= $sheet->getHighestRow();
+        $highestColumn= $sheet->getHighestColumn();
+        
+        for ($row =1; $row <= $highestRow; $row++){
+            $rowData[]= $sheet->rangeToArray('A'.$row.':'.$highestColumn.$row,NULL, TRUE, FALSE);
+            
+            if ($row==1){
+                continue;
+            }
+            
+            
+           
+//            $modelReports= new Reports;
+//            $modelReports->
+        }
+         var_dump($rowData);
     }
 
 }
+
+
+   

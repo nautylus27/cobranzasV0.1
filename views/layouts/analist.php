@@ -71,7 +71,7 @@ AppAsset::register($this);
             </div>
         </div>
         <div layout="row" ng-controller="newCollections">
-            <div flex-gt-sm="20" flex="20" style="margin-right: -30px;">
+            <div flex-gt-sm="20" flex="20" style="margin-right: -18px;">
                 <div class="row" style="margin-top: 64px;">
                     <div class="col-md-2" style="width: 293px;">
                         <div class="page-container" ui-view>
