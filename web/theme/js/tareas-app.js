@@ -55746,6 +55746,7 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia, $
 
     $scope.menuHorizontalIzq = false;
     $scope.loadtable = false;
+    $scope.back = true;
     $scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
     $scope.showModal = function (ev, arg) {
 
@@ -55791,7 +55792,7 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia, $
 
     $scope.parJson = function (json) {
         return angular.fromJson(json);
-        };
+    };
 
     $scope.typeR = function (id_business) {
 
@@ -55805,7 +55806,7 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia, $
                     var parameters = response.data;
                     $scope.showCase = parameters.response;
                     $scope.loadtable = false;
-                    $scope.countTo=parameters.summatory;
+                    $scope.countTo = parameters.summatory;
                 }, function (response) {
                     $scope.data = response.data || "Request failed";
                     $scope.status = response.status;
@@ -55833,7 +55834,20 @@ app.controller('newCollections', function ($scope, $http, $mdDialog, $mdMedia, $
 
     }, 100);
 
-
+    $scope.backmenu = function (back) {
+        
+        if (back===true){
+             $scope.menuHorizontalIzq = false;
+             $scope.back=false;
+        }
+        else {
+             $scope.menuHorizontalIzq = true;
+             $scope.back=true;
+        }
+       
+        $scope.showmenu="reply";
+        
+    }
 
 })
 

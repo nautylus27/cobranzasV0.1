@@ -108,6 +108,13 @@ AppAsset::register($this);
                                         </div>
                                     </section>
                                     <sidebar-menu ng-hide="menuHorizontalIzq" >
+                                        <div style="padding-left: 10px;" ng-hide="back">
+                                            <a href="javascripts:;" ng-click="backmenu(back)">
+                                                <i class="material-icons "  style="color: #FFC107;">{{showmenu}}</i> 
+                                                <md-tooltip md-direction="right"> Regresar al menu</md-tooltip>
+                                            </a>
+                                            <span style="color: #FFFFFF; margin-left: 79px"> Registros</span>
+                                        </div>
                                         <ul id="main-menu" class="main-menu ng-scope" >
                                             <li class="ng-scope has-sub expanded">
                                                 <a href="#/app/dashboard" class="ng-scope">
@@ -121,12 +128,7 @@ AppAsset::register($this);
                                                             <span class="title ng-binding ng-scope">Cartera</span>
                                                         </a>
                                                     </li>
-                                                    <li  class="ng-scope">
-                                                        <a href="#/app/dashboard-variant-1"  class="ng-scope">
-                                                            <span class="title ng-binding ng-scope">Reportantes</span>
-                                                        </a>
-                                                    </li>
-                                                    <li  class="ng-scope">
+<!--                                                    <li  class="ng-scope">
                                                         <a href="#/app/dashboard-variant-1"  class="ng-scope">
                                                             <span class="title ng-binding ng-scope">Acreedores</span>
                                                         </a>
@@ -135,14 +137,25 @@ AppAsset::register($this);
                                                         <a href="#/app/dashboard-variant-1"  class="ng-scope">
                                                             <span class="title ng-binding ng-scope">Informes</span>
                                                         </a>
-                                                    </li>
+                                                    </li>-->
                                                 </ul>
+                                            </li>
+                                            <li class="ng-scope has-sub">
+                                                <a href="/loaddata/index" class="ng-scope">
+                                                    <i ng-if="item.icon" class="linecons-cog"></i>
+                                                    <span class="title ng-binding ng-scope">Carga de Datos</span>
+                                                </a>
                                             </li>
                                         </ul>
                                     </sidebar-menu>
                                     <sidebar-menu ng-show="menuHorizontalIzq">
-                                        <div style="padding-left: 10px;"><a href="javascripts:;"><i class="material-icons "  style="color: #FFC107;">reply</i> <md-tooltip md-direction="right"> Regresar al menu</md-tooltip>
-                                            </a><span style="color: #FFFFFF; margin-left: 79px"> Registros</span></div>
+                                        <div style="padding-left: 10px;">
+                                            <a href="javascripts:;" ng-click="backmenu(back)">
+                                                <i class="material-icons "  style="color: #FFC107;">reply</i> 
+                                                <md-tooltip md-direction="right"> Regresar al menu</md-tooltip>
+                                            </a>
+                                            <span style="color: #FFFFFF; margin-left: 79px"> Registros</span>
+                                        </div>
                                         <ul  class="main-menu ng-scope">
                                             <li  class="ng-scope" ng-repeat="business in showCase" style="height: 40px; color: #FFFFFF">
                                                 <a href="#/app/dashboard-variant-1"  class="ng-scope">

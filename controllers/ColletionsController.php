@@ -65,7 +65,6 @@ class ColletionsController extends \yii\web\Controller {
 
     public function actionIndex() {
         $this->layout = 'analist';
-
         return $this->render('index');
     }
 
@@ -186,7 +185,7 @@ class ColletionsController extends \yii\web\Controller {
     
     
     public function actionImportexcel(){
-//        $objPHPExcel = new \PHPExcel();
+
         $inputFile = "uploads/prueba.xlsx";
         try{
             $inputFileType= \PHPExcel_IOFactory::identify($inputFile);
