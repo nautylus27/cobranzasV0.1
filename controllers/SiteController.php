@@ -8,20 +8,29 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Users;
 
-class SiteController extends Controller
-{
+class SiteController extends Controller {
+
+    public function beforeAction($action) {
+        try {
+            $this->enableCsrfValidation = FALSE;
+            return parent::beforeAction($action);
+        } catch (Exception $e) {
+            echo 'Caught exception: ', $e->getMessage(), "\n";
+        }
+    }
+
     /**
      * @inheritdoc
      */
-    public function behaviors()
-    {
+    public function behaviors() {
         return [
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout'],
                 'rules' => [
-                    [
+                        [
                         'actions' => ['logout'],
                         'allow' => true,
                         'roles' => ['@'],
@@ -40,8 +49,7 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
-    public function actions()
-    {
+    public function actions() {
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -58,8 +66,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
-    {
+    public function actionIndex() {
         return $this->render('index');
     }
 
@@ -68,8 +75,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionLogin()
-    {
+    public function actionLogin() {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -79,7 +85,7 @@ class SiteController extends Controller
             return $this->goBack();
         }
         return $this->render('login', [
-            'model' => $model,
+                    'model' => $model,
         ]);
     }
 
@@ -88,8 +94,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionLogout()
-    {
+    public function actionLogout() {
         Yii::$app->user->logout();
 
         return $this->goHome();
@@ -100,8 +105,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionContact()
-    {
+    public function actionContact() {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
@@ -109,7 +113,7 @@ class SiteController extends Controller
             return $this->refresh();
         }
         return $this->render('contact', [
-            'model' => $model,
+                    'model' => $model,
         ]);
     }
 
@@ -118,8 +122,34 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
-    {
+    public function actionAbout() {
         return $this->render('about');
     }
+
+    public function actionLogincollections() {
+        
+        $session = Yii::$app->session;
+        $session->open();
+        $postData = file_get_contents("php://input");
+        $post = json_decode($postData, true);
+        $response = Users::validateUsers($post);
+        $id_employee=$response['id_employee'];
+        $id_users=$response['id_users'];
+        $_SESSION['id_employee'] = $id_employee;
+        $_SESSION['id_users'] = $id_users;
+    
+        
+        if ($response != false){
+             echo json_encode($resquest = ["response" => $response, "message" => "Redireccionando...", "title"=>"Proceso Exitoso", "type"=>"success"]);
+        }
+        else {
+             echo json_encode($resquest = ["response" => $response, "message" => "Usuario o Contraseña Incorrecta, Por favor vuelva a intentarlo ", "title"=>"Fallo el proceso de verificación", "type"=>"error"]);
+        }
+    }
+
+    public function actionModalnew() {
+        $this->layout = 'modalnew';
+        return $this->render('colle');
+    }
+
 }
