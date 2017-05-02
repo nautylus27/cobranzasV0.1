@@ -11,6 +11,9 @@ use app\models\Acreedores;
 use app\models\Bank;
 use app\models\Reports;
 use app\models\Business;
+use app\models\PruebaPropietario;
+use app\models\PruebaVehiculo;
+
 
 class ColletionsController extends \yii\web\Controller {
 
@@ -184,9 +187,10 @@ class ColletionsController extends \yii\web\Controller {
     }
     
     
-    public function actionImportexcel(){
+    public function actionImportexcelvehiculo(){
 
-        $inputFile = "uploads/prueba.xlsx";
+        $inputFile = "uploads/vehiculo.xls";
+		$parametros = [];
         try{
             $inputFileType= \PHPExcel_IOFactory::identify($inputFile);
             $objReader = \PHPExcel_IOFactory::createReader($inputFileType);
@@ -199,20 +203,142 @@ class ColletionsController extends \yii\web\Controller {
         $sheet =$objPHPExcel->getSheet(0);
         $highestRow= $sheet->getHighestRow();
         $highestColumn= $sheet->getHighestColumn();
-        
-        for ($row =1; $row <= $highestRow; $row++){
+
+			
+	    for ($row =42603; $row <= $highestRow; $row++){
             $rowData[]= $sheet->rangeToArray('A'.$row.':'.$highestColumn.$row,NULL, TRUE, FALSE);
-            
-            if ($row==1){
-                continue;
-            }
-            
-            
-           
-//            $modelReports= new Reports;
-//            $modelReports->
+
         }
-         var_dump($rowData);
+	
+		
+			
+		foreach ($rowData as $key =>$data){
+			if($data[0][0]!=null){
+				// $dataVa = Yii::$app->db->createCommand("SELECT * FROM prueba_vehiculo as p WHERE p.placa='" . $data[0][0] . "'")->queryAll();
+				
+			// if(empty($dataVa) && is_array($dataVa)){
+				$parameters['interno']=$data[0][1];
+				$parameters['movil']=$data[0][2];
+				$parameters['modo']=$data[0][3];
+				$parameters['marca']=$data[0][4];
+				$parameters['modelo']=$data[0][5];
+				$parameters['color']=$data[0][6];
+				$parameters['numero_chasi']=$data[0][7];
+				$parameters['numero_moto']=$data[0][8];
+				$parameters['serie']=$data[0][9];
+				$parameters['carroceria']=$data[0][10];
+				$parameters['clase_combustible']=$data[0][11];
+				$parameters['capacidad']=$data[0][12];
+				$parameters['cilindraje']=$data[0][13];
+				$parameters['linea']=$data[0][14];
+				$parameters['fecha_matricula']=$data[0][15];
+				$parameters['fecha_afiliacion']=$data[0][18];
+				$parameters['numero_tarjeta_operacion']=$data[0][19];
+				$parameters['fecha_expeciencia']=$data[0][20];
+				
+				     $model= new PruebaVehiculo;
+			         $model->placa = $data[0][0];
+					 $model->dni_propietario= $data[0][16];
+					 $model->dni_conductor= $data[0][17];
+					 $model->parameters= json_encode($parameters);
+					 $model->save();
+				
+					 
+			// }
+			}
+		}
+			// echo json_encode($resquest = [ "message" => "Actualizando", "title" => "Registro Exitoso", "type" => "success"]);
+		}
+
+		
+		// $validateDocument=PruebaPropietario::validate($dataValida);
+ 
+
+		 // foreach($rowData as $key => $data){
+			// if($data[0][1]!=null){
+			   // $modelprueba= new PruebaPropietario;
+			   // $modelprueba->dni = $data[0][1];
+			   // $parametros[] =
+			   // $modelprueba->save();
+			// }
+			// else {
+				
+			// }
+		 // }
+    
+	
+	
+	public function actionImportexcelpropietario(){
+
+        $inputFile = "uploads/info.xlsx";
+		$parametros = [];
+        try{
+            $inputFileType= \PHPExcel_IOFactory::identify($inputFile);
+            $objReader = \PHPExcel_IOFactory::createReader($inputFileType);
+            $objPHPExcel =$objReader->load($inputFile);
+            
+        }catch(Exception $e){
+            die ('Error');
+        }
+        
+        $sheet =$objPHPExcel->getSheet(0);
+        $highestRow= $sheet->getHighestRow();
+        $highestColumn= $sheet->getHighestColumn();
+
+			
+	    for ($row =1; $row <= $highestRow; $row++){
+            $rowData[]= $sheet->rangeToArray('A'.$row.':'.$highestColumn.$row,NULL, TRUE, FALSE);
+
+        }
+		
+		$dataValida=[];
+		foreach($rowData as $key => $data){
+			if($data[0][1]!=null){
+				$dataVa = Yii::$app->db->createCommand("SELECT * FROM prueba_propietario as p WHERE p.dni='" . $data[0][1] . "'")->queryAll();
+				
+				if(empty($dataVa) && is_array($dataVa)){
+				
+					 $parameters['nombres']=$data[0][2];
+					 $parameters['apellido']=$data[0][3];
+					 $parameters['fecha_nacimiento']=$data[0][4];
+					 $parameters['sexo']=$data[0][5];
+					 $parameters['estado_civil']=$data[0][6];
+					 $parameters['grupo_sanguinio']=$data[0][7];
+					 $parameters['departamento_ciudad']=$data[0][8];
+					 $parameters['direccion']=$data[0][9];
+					 $parameters['barrio']=$data[0][10];
+					 $parameters['typo_vivienda']=$data[0][11];
+					 $parameters['telefono']=$data[0][14];
+					 $parameters['celular']=$data[0][15];
+					 $parameters['correo']=$data[0][16];
+					 $parameters['licencia']=$data[0][21];
+					 $parameters['categoria']=$data[0][22];
+					 $parameters['vence_licencia']=$data[0][23];
+					 $parameters['vehiculo']=$data[0][29];
+				
+					 $model= new PruebaPropietario;
+			         $model->dni = $data[0][1];
+					 $model->parameters= json_encode($parameters);
+					 $model->save();				
+					 }
+			}
+		}
+
+		
+		// $validateDocument=PruebaPropietario::validate($dataValida);
+ 
+
+		 // foreach($rowData as $key => $data){
+			// if($data[0][1]!=null){
+			   // $modelprueba= new PruebaPropietario;
+			   // $modelprueba->dni = $data[0][1];
+			   // $parametros[] =
+			   // $modelprueba->save();
+			// }
+			// else {
+				
+			// }
+		 // }
     }
 
 }
